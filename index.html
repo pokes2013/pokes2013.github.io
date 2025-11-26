@@ -8,29 +8,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="外卖品尝师的个人博客">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- 默认的绿色主题 -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
   
   <!-- 蓝色主题 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
 
   <style>
-    /* 重置所有宽度限制 */
+    /* 重置所有宽度限制，会影响到代码块的宽度 */
     .markdown-section {
-      max-width: 100% !important;
-      margin: 0 5% !important; /* 保留小边距确保可读性 */
+      max-width: 80% !important;
+      margin: 0 -10% !important; /* 保留小边距确保可读性 */
       width: auto !important;
     }
     
     /* 大屏幕时增加边距 */
-    @media (min-width: 1200px) {
+    @media (min-width: 1000px) {
       .markdown-section {
-        margin: 0 10% !important;
+        margin: 0 0% !important;
       }
     }
     
-    /* 超大屏幕时使用更大边距 */
-    @media (min-width: 1600px) {
+    /* 超大屏幕时使用更大边距，会影响到文章和侧边栏的间距 */
+    @media (min-width: 1000px) {
       .markdown-section {
-        margin: 0 15% !important;
+        margin: 0 -10% !important;
       }
     }
 
