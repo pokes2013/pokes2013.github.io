@@ -1,8 +1,12 @@
-- [HOME](/)
+<p style="text-align: center; font-size: 12px; color: red;">😪😪文章大纲🥱🥱</p>
+
+----
+
+- [返回首页](/)
+
 
 ---
-
-<p style="text-align: left;">固定导航专栏</p>
+<p style="text-align: center; font-size: 12px; color: red;">🍎🍎🍎固定导航专栏🥦🥦🥦</p>
 
 - [🍱01.Linux基础学习](doc/linux/list.md)
 - [🍚02.网络安全学习](doc/network/list.md)
@@ -16,5 +20,3 @@
 - [🍔10.ERP运维笔记](doc/erp/list.md)
 
 ----
-<p style="text-align: center;">联系：pokes@163.com</p>
-<p style="text-align: center;">外卖品尝师</p>

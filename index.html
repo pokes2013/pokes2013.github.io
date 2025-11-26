@@ -17,7 +17,43 @@
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
 
+
+
   <style>
+    /* 全局字距和行距调整 */
+      * {
+            letter-spacing: 0.5px;  /* 字距 */
+            line-height: 1.5;       /* 行距 */
+      }
+
+    /* 侧边栏鼠标悬停效果 */
+        .sidebar li { 
+            padding: 8px 12px; 
+            margin: 2px 0;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .sidebar li:hover { 
+            background-color: #e0e0e0; 
+        }
+
+    /* 取消超链接下划线 */
+    a { text-decoration: none; }
+
+    /* 全局字体设置 */
+    * {
+      font-family: "Source Han Sans","Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif !important;
+    }
+    /* 也可以单独针对特定元素设置 */
+    body {
+      font-family: "SimSun", serif;
+    }
+    /* 代码块字体（如需修改） */
+    code, pre {
+      font-family: "Consolas", "Monaco", monospace;
+    }
+
+
     /* 重置所有宽度限制，会影响到代码块的宽度 */
     .markdown-section {
       max-width: 80% !important;
@@ -50,22 +86,7 @@
       width: calc(100% - 280px) !important;
     }
     
-    /* 移动端适配 */
-    @media (max-width: 768px) {
-      .sidebar {
-        width: 100% !important;
-        transform: translateX(-100%);
-      }
-      
-      .content {
-        margin-left: 0 !important;
-        width: 100% !important;
-      }
-      
-      .markdown-section {
-        margin: 0 15px !important;
-      }
-    }
+
 
     /* 行内代码背景色 */
     p code {
