@@ -1,395 +1,61 @@
-<!-- docs/index.html -->
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>外卖品尝师🍔的blog</title>
+  <title>外卖品尝师🍔的Blog - 记录成长之路</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="外卖品尝师的个人博客">
+  <meta name="description" content="外卖品尝师的个人技术博客，分享Linux、网络安全、Python、Java等技术学习笔记">
+  <meta name="keywords" content="技术博客,Linux,网络安全,Python,Java,ERP运维">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-  <!-- 默认的绿色主题 -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
   
-  <!-- 蓝色主题 -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
-
+  <!-- Docsify 主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
-
-
-
-  <style>
-    /* 全局字距和行距调整 */
-      * {
-            letter-spacing: 0.5px;  /* 字距 */
-            line-height: 1.5;       /* 行距 */
-      }
-
-    /* 侧边栏鼠标悬停效果 */
-        .sidebar li { 
-            padding: 8px 12px; 
-            margin: 2px 0;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        .sidebar li:hover { 
-            background-color: #e0e0e0; 
-        }
-
-    /* 取消超链接下划线 */
-    a { text-decoration: none; }
-
-    /* 全局字体设置 */
-    * {
-      font-family: "Source Han Sans","Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif !important;
-    }
-    /* 也可以单独针对特定元素设置 */
-    body {
-      font-family: "SimSun", serif;
-    }
-    /* 代码块字体（如需修改） */
-    code, pre {
-      font-family: "Consolas", "Monaco", monospace;
-    }
-
-
-    /* 重置所有宽度限制，会影响到代码块的宽度 */
-    .markdown-section {
-      max-width: 80% !important;
-      margin: 0 -10% !important; /* 保留小边距确保可读性 */
-      width: auto !important;
-    }
-    
-    /* 大屏幕时增加边距 */
-    @media (min-width: 1000px) {
-      .markdown-section {
-        margin: 0 0% !important;
-      }
-    }
-    
-    /* 超大屏幕时使用更大边距，会影响到文章和侧边栏的间距 */
-    @media (min-width: 1000px) {
-      .markdown-section {
-        margin: 0 -10% !important;
-      }
-    }
-
-    /* 侧边栏宽度调整 */
-    .sidebar {
-      width: 280px !important;
-    }
-    
-    /* 内容区域完全展开 */
-    .content {
-      margin-left: 280px !important;
-      width: calc(100% - 280px) !important;
-    }
-    
-
-
-    /* 行内代码背景色 */
-    p code {
-      background-color: rgb(255, 255, 255) !important;
-    }
-
-    /* 提示框和表格行字体大小 */
-    .markdown-section p.tip,
-    .markdown-section tr:nth-child(1n) {
-      font-size: 16px !important;
-    }
-
-    /* 标题间距设置 */
-    .markdown-section h1 {
-      margin: 3rem 0 2rem 0;
-    }
-
-    .markdown-section h2 {
-      margin: 2rem 0 1rem;
-    }
-    
-    /* 图片和代码块圆角 */
-    img,
-    pre {
-      border-radius: 5px;
-    }
-
-    /* 代码块复制按钮样式 */
-    .docsify-copy-code-button {
-      background: #00a1d6 !important;
-      color: #FFFFFF !important;
-      font-size: 13px !important;
-    }
-
-    /* 代码语言标识样式 */
-    ::after {
-      color: #9da2fd !important;
-      font-size: 13px !important;
-    }
-    
-    /* 段落字体大小 */
-    .markdown-section>p {
-      font-size: 16px !important;
-    }
-
-    /* 代码块头部图标 */
-    .markdown-section pre:before {
-      content: '';
-      display: block;
-      background: url(https://notebook.js.org/images/20220519-02-myinfo.png);
-      height: 30px;
-      background-size: 40px;
-      background-repeat: no-repeat;
-      background-color: #1C1C1C;
-      background-position: 10px 10px;
-    }
-
-    /* 代码块内部代码样式 */
-    .markdown-section pre>code {
-      color: #c0c3c1 !important;
-      font-family: 'Inconsolata', consolas,"PingFang SC", "Microsoft YaHei", monospace !important;
-      background-color: #212121 !important;
-      font-size: 15px !important;
-      white-space: pre !important;
-      line-height: 1.5 !important;
-      -moz-tab-size: 4 !important;
-      -o-tab-size: 4 !important;
-      tab-size: 4 !important;
-    }
-
-    /* 列表样式 */
-    ol, ul, li {
-      line-height: 27px !important;
-      font-size: 16px !important;
-    }
-    
-    /* 大屏幕设备代码样式 */
-    @media (min-width:600px) {
-      .markdown-section pre>code {
-        font-size: 15px !important;
-        letter-spacing: 1.1px !important;
-      }
-    }
-    
-    /* 封面标题样式 */
-    section.cover h1 {
-      margin: 0;
-    }
-
-    /* 代码块背景色 */
-    pre {
-      background-color: #212121 !important;
-    }
-
-    /* 大屏幕代码块样式 */
-    @media (min-width:600px) {
-      pre code {
-        padding-left: 20px !important;
-      }
-    }
-
-    /* 移动端代码块和广告隐藏 */
-    @media (max-width:600px) {
-      pre {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-      }
-
-      /* 移动端隐藏复制按钮 */
-      .docsify-copy-code-button {
-        display: none;
-      }
-
-      /* 移动端隐藏广告 */
-      .advertisement {
-        display: none;
-      }
-    }
-
-    /* 代码块左右边距 */
-    .markdown-section pre {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
-    }
-
-    /* 代码高亮颜色配置 */
-    .token.directive.keyword { color: #4faee2 !important; }
-    .token.keyword { color: #c678dd !important; }
-    .token.comment { color: #737c8b !important; }
-    .token.tag { color: #a589ad !important; }
-    .token.attr-name { color: #de916c !important; }
-    .token.attr-value { color: #4faee2 !important; }
-    .token.macro.property { color: #4faee2 !important; }
-    .token.function { color: #e6b456 !important; }
-    .token.string { color: #98b755 !important; }
-    .token.punctuation { color: #c0c3c1 !important; }
-    .token.number { color:#c0c3c1 !important; }
-
-    /* 侧边栏链接字体大小 */
-    a.section-link { font-size: .9rem !important; }
-
-    /* 广告区域样式 */
-    .advertisement {
-      position: fixed;
-      right: 20px;
-      top: 100px;
-      width: 110px;
-      box-shadow: -1px 0 2px 0px #c5ebda;
-      padding: 10px;
-      z-index: 99;
-      background-color: #fff;
-      text-align: center;
-    }
-
-    .advertisement p, h4 {
-      margin: 0;
-      padding: 0;
-    }
-
-    .advertisement .Tencent_code h4 {
-      font-size: 15px;
-      color: #25a46a;
-      margin-bottom: 10px;
-    }
-
-    /* 自定义滚动条样式 */
-    ::-webkit-scrollbar { width:5px; } /* 滚动条宽度 */
-    ::-webkit-scrollbar-thumb { /* 滚动条颜色 */
-      background: #33a9dc;
-      background-image: linear-gradient(#6ecd56, #33a9dc, #cb6196, #c16290);
-      border-radius: 2em;
-    }
-  </style>
   
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="custom.css">
+
 </head>
 <body>
-  <!-- docsify 挂载点 -->
   <div id="app"></div>
   
   <script>
-      window.$docsify = {
-        // 站点名称，显示在侧边栏
-        name: '<span>外卖品尝师🍔的blog</span>',
-        
-        // GitHub 仓库地址，为空则不显示 GitHub 角标
-        repo: '',
-        
-        // 挂载元素
-        el: '#app',
-        
-        // 自动加载侧边栏
-        loadSidebar: true,
-        
-        // 自动生成标题锚点
-        autoHeader: true,
-        
-        // 外部链接打开方式
-        externalLinkTarget: '_blank',
-        
-        // 滚动时标题的顶部间距
-        topMargin: 60,
-        
-        // 加载导航栏
-        loadNavbar: true,
-        
-        // 最大渲染标题层级
-        maxLevel: 4,
-        
-        // 侧边栏显示位置
-        sidebarDisplay: 'right',
-        
-        // 子目录最大层级
-        subMaxLevel: 4,
-        
-        // 小屏幕设备合并导航栏到侧边栏
-        mergeNavbar: true,
-        
-        // 加载侧边栏
-        loadSidebar: true,
-        
-        // 目录显示层级
-        subMaxLevel: 4,
-        
-        // 封面页配置（已注释）
-        // coverpage: true,
-        // onlyCover: true,
-        
-        // 站点 Logo（已注释）
-        // logo: '/_media/icon.svg'
+    window.$docsify = {
+      name: '<span style="color: #000;">👨‍🍳外卖品尝师Pokes技术栈</span>',
+      repo: '',
+      el: '#app',
+      loadSidebar: true,
+      autoHeader: true,
+      externalLinkTarget: '_blank',
+      topMargin: 100,
+      loadNavbar: true,
+      maxLevel: 4,
+      subMaxLevel: 4,
+      mergeNavbar: true,
+      search: {
+        placeholder: '搜索文章...',
+        noData: '没有找到相关文章'
+      }
     }
   </script>
   
-  <!-- docsify 核心库 -->
+  <!-- Docsify 核心库 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   
-  <!-- 插件：emoji 表情支持 -->
+  <!-- 插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-  
-  <!-- 插件：图片缩放支持 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-  
-  <!-- 插件：搜索功能 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  
-  <!-- 插件：代码复制功能 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 
-  <!-- 插件：DOT 语言支持（图形绘制） -->
-  <script src="https://notebook.js.org/plugin/viz.js"></script>
-  
-  <!-- 插件：LaTeX 数学公式支持 -->
-  <script src="https://notebook.js.org/plugin/js/docsify-katex.js"></script>
-
-  <!-- 插件：PDF 嵌入支持 -->
-  <script src="https://notebook.js.org/plugin/pdfobject.min.js"></script>
-  <script src="https://notebook.js.org/plugin/docsify-pdf-embed.js"></script>
-
-  <!-- 插件：回到顶部功能 -->
-  <script src="https://notebook.js.org/plugin/jquery.js"></script>
-  <script src="https://notebook.js.org/plugin/jquery.goup.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $.goup({
-        trigger: 100,        // 滚动100px后显示按钮
-        bottomOffset: 52,    // 距离底部偏移
-        locationOffset: 25,  // 位置偏移
-        titleAsText: true    // 显示文字而非图标
-      });
-    });
-  </script>
-
-  <!-- 代码高亮支持 - 各种编程语言 -->
-  <script src="https://notebook.js.org/plugin/prism-c.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-cpp.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-css.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-docker.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-java.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-javascript.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-json.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-latex.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-sql.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-markdown.js"></script>
+  <!-- 简化插件加载 -->
   <script src="https://notebook.js.org/plugin/prism-bash.min.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-php.min.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-scala.min.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-nginx.min.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-json.min.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-markdown.min.js"></script>
+  <script src="https://notebook.js.org/plugin/prism-javascript.js"></script>
   <script src="https://notebook.js.org/plugin/prism-python.js"></script>
-  <script src="https://notebook.js.org/plugin/js/prism-yaml.js"></script>
-  <script src="https://notebook.js.org/plugin/js/prism-go.js"></script>
-  <script src="https://notebook.js.org/plugin/js/prism-matlab.js"></script>
+  <script src="https://notebook.js.org/plugin/prism-java.js"></script>
+  <script src="https://notebook.js.org/plugin/prism-sql.js"></script>
 
-  <!-- 未知功能插件 -->
-  <script src="https://notebook.js.org/plugin/sidecar.v1.js" async defer></script>
-
-  <!-- 插件：鼠标点击特效（爱心） -->
+  <!-- 点击特效 -->
   <script src="https://notebook.js.org/plugin/click_heart.js"></script>
-
-  <!-- 插件：复制提示框 -->
-  <script src="https://notebook.js.org/plugin/sweetalert.min.js"></script>
 
 </body>
 </html>
