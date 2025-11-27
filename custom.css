@@ -18,14 +18,14 @@
 
   /* Docsify 专用变量 */
   --docsify-bg: var(--theme-0);           /* 修改：页面背景色 */
-  --docsify-text: var(--theme-700);       /* 修改：正文文字颜色 */
+  --docsify-text: var(--theme-800);       /* 修改：正文文字颜色 */
   --docsify-heading: var(--theme-900);    /* 修改：标题颜色 */
-  --docsify-link: var(--theme-900);       /* 修改：链接颜色 */
+  --docsify-link: var(--theme-800);       /* 修改：链接颜色 */
   --docsify-code-bg: var(--theme-100);    /* 修改：行内代码背景 */
   --docsify-code-text: var(--theme-900);  /* 修改：行内代码文字 */
   --docsify-border: var(--theme-200);     /* 修改：边框颜色 */
-  --docsify-sidebar-bg: var(--theme-50);  /* 修改：侧边栏背景 */
-  --docsify-sidebar-text: var(--theme-700); /* 修改：侧边栏文字 */
+  --docsify-sidebar-bg: var(--theme-100);  /* 修改：侧边栏背景 */
+  --docsify-sidebar-text: var(--theme-800); /* 修改：侧边栏文字 */
   --docsify-sidebar-active: var(--theme-100); /* 修改：侧边栏激活项背景 */
 }
 
@@ -154,7 +154,7 @@ body {
 .markdown-section pre {
   background-color: var(--theme-800) !important; /* 修改：代码块背景色 */
   border-radius: 0.0rem;     /* 修改：代码块圆角 */
-  padding: 1.1111111em 1.3333333em; /* 修改：代码块内边距 */
+  padding: 1.2em 1.2em; /* 修改：代码块内边距 */
   margin: 2em 0;             /* 修改：代码块边距 */
   border-left: 4px solid var(--tw-primary); /* 修改：代码块左侧边框 */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 修改：代码块阴影 */
@@ -163,7 +163,7 @@ body {
 .markdown-section pre > code {
   color: var(--theme-100) !important; /* 修改：代码文字颜色 */
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 修改：代码字体 */
-  font-size: 0.9em;          /* 修改：代码字体大小 */
+  font-size: 1.0em;          /* 修改：代码字体大小 */
   line-height: 1.7777778;    /* 修改：代码行高 */
   background: transparent !important; /* 修改：代码背景透明 */
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.1); /* 修改：代码文字阴影 */
@@ -189,7 +189,7 @@ body {
 }
 
 .token.keyword {
-  color: #569cd6 !important; /* 修改：关键字颜色 */
+  color: #0af8ec !important; /* 修改：关键字颜色 */
 }
 
 .token.string {
@@ -206,14 +206,14 @@ body {
 
 /* ===== 引用块样式 ===== */
 .markdown-section blockquote {
-  border-left: 0.25rem solid var(--theme-300); /* 修改：引用块左侧边框 */
+  border-left: 0.45rem solid #026ae2ea; /* 修改：引用块左侧边框 */
   background-color: var(--theme-50); /* 修改：引用块背景 */
-  color: var(--theme-800);           /* 修改：引用块文字颜色 */
-  font-weight: 500;                  /* 修改：引用块字重 */
-  font-style: italic;                /* 修改：引用块斜体 */
+  color: #a2a3a3;           /* 修改：引用块文字颜色 */
+  font-weight: 300;                  /* 修改：引用块字重 */
+  /*font-style: italic;                 修改：引用块斜体 */
   margin: 1.6em 0;                   /* 修改：引用块边距 */
   padding: 1em 1.0666667em;          /* 修改：引用块内边距 */
-  border-radius: 0 0.5rem 0.5rem 0;  /* 修改：引用块圆角 */
+  border-radius: 0 0.0rem 0.0rem 0;  /* 修改：引用块圆角 */
 }
 
 /* ===== 表格样式 ===== */
@@ -248,7 +248,7 @@ body {
   background-color: var(--docsify-sidebar-bg) !important; /* 修改：侧边栏背景 */
   border-right: 1px solid var(--docsify-border); /* 修改：侧边栏右侧边框 */
   width: 380px !important; /* 调整这个值来改变侧边栏宽度 */
-  font-size: 20px; /* 调整侧边栏基础字体大小 */
+  font-size: 18px; /* 调整侧边栏基础字体大小 */
   white-space: nowrap !important; /* 禁止换行 */
 
 }
@@ -361,4 +361,37 @@ body {
   background-color: #f0f9ff;   /* 修改：提示框背景 */
   border-left-color: #0ea5e9;  /* 修改：提示框边框颜色 */
   color: #0369a1;              /* 修改：提示框文字颜色 */
+}
+
+
+/* 自定义页脚样式 */
+.custom-footer {
+  background-color: var(--theme-50);
+  border-top: 1px solid var(--theme-200);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--theme-600);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
+.custom-footer a {
+  color: var(--theme-600);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-footer a:hover {
+  color: var(--tw-primary);
+  text-decoration: underline;
 }

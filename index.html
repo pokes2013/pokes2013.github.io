@@ -15,12 +15,14 @@
   <link rel="stylesheet" href="custom.css">
 
 </head>
+
+
 <body>
   <div id="app"></div>
-  
+
   <script>
     window.$docsify = {
-      name: '<span style="color: #000;">👨‍🍳外卖品尝师Pokes技术栈</span>',
+      name: '<span style="color: #000;">👨‍🍳外卖品尝师技术栈</span>',
       repo: '',
       el: '#app',
       loadSidebar: true,
@@ -56,6 +58,52 @@
 
   <!-- 点击特效 -->
   <script src="https://notebook.js.org/plugin/click_heart.js"></script>
+
+  <script>
+  // 页脚插入函数
+  function insertFooter() {
+    const footerHTML = `
+      <footer class="custom-footer">
+        <div class="footer-content">
+          <p>🍔 <strong>外卖品尝师的blog</strong> - 技术学习与成长记录</p>
+          <p>
+            <a href="/">首页</a> • 
+            <a href="https://blog.csdn.net/annita2019" target="_blank">CSDN博客</a> • 
+            <a href="javascript:void(0)" onclick="showContact()">联系我</a>
+          </p>
+          <p class="footer-copyright">
+            &copy; 2025 创建于 2025.11.26 | Powered by Docsify
+          </p>
+        </div>
+      </footer>
+    `;
+    
+    // 等待 Docsify 渲染完成
+    setTimeout(() => {
+      const content = document.querySelector('.content');
+      const markdownSection = document.querySelector('.markdown-section');
+      
+      if (content && markdownSection) {
+        // 创建页脚元素
+        const footer = document.createElement('div');
+        footer.innerHTML = footerHTML;
+        
+        // 插入到 markdown-section 后面
+        markdownSection.parentNode.insertBefore(footer, markdownSection.nextSibling);
+      }
+    }, 100);
+  }
+
+  // 初始化页脚
+  document.addEventListener('DOMContentLoaded', insertFooter);
+
+  // 监听路由变化，确保页面切换时页脚仍然存在
+  if (window.$docsify) {
+    window.$docsify.afterEach = function() {
+      setTimeout(insertFooter, 50);
+    };
+  }
+</script>
 
 </body>
 </html>

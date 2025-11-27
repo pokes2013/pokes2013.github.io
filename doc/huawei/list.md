@@ -19,3 +19,6 @@
 - [华为路由器-多区域OSPF协议实验](doc/huawei/华为路由器-多区域OSPF协议实验.md)
 - [数通网工学习网络协议的方法](doc/huawei/数通网工学习网络协议的方法.md)
 - [10分钟理解OSPF](doc/huawei/10分钟理解OSPF(豆豆家姐姐)/10分钟理解OSPF.md)
+- [中恒普瑞399三层网络组网是设计](doc/huawei/09.综合组网实例/中恒普瑞399三层网络组网是设计/公司网络配置信息.md)
+- [VRRP+MSTP实验教程](doc/huawei/09.综合组网实例/VRRP+MSTP实验教程/VRRP+MSTP实验.md)
+- [企业OSPF组网实例](doc/huawei/09.综合组网实例/企业OSPF组网实例demo001/企业OSPF组网实例.md)
