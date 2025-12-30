@@ -1,0 +1,2 @@
+start %cd%
+docsify serve

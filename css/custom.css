@@ -1,0 +1,298 @@
+/* 全局样式重置与基础配置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 全局字体优化：使用无衬线字体，更清晰易读 */
+body {
+  font-family: "Inter", "Helvetica Neue", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  color: #333; /* 正文深色，提升可读性 */
+  background-color: #f8f9fa; /* 浅灰背景，不刺眼 */
+  line-height: 1.7; /* 行高优化，提升阅读体验 */ 
+}
+
+/* 主容器样式：限制宽度，居中显示，适配大屏 */
+.markdown-body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #ffffff; /* 正文白色背景，突出内容 */
+  border-radius: 8px; /* 圆角设计，更柔和 */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); /* 轻微阴影，提升层次感 */
+  margin-bottom: 40px;
+}
+
+/* 侧边栏样式优化（增强视觉层次感，添加滚动功能） */
+.sidebar {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.04); /* 更柔和的阴影 */
+  padding-top: 20px !important;
+  border-radius: 8px; /* 增加圆角，更柔和 */
+  width: 260px; /* 固定合适宽度，提升紧凑感 */
+  /* 滚动相关设置 */
+  max-height: calc(100vh - 40px); /* 限制最大高度为视口高度减去边距 */
+  overflow-y: auto; /* 内容超出时显示垂直滚动条 */
+  overflow-x: hidden; /* 禁止水平滚动 */
+}
+
+/* 侧边栏标题样式（增加视觉区分） */
+.sidebar h1 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  padding: 0 15px 10px; /* 底部内边距 */
+  border-bottom: 1px solid #f0f2f5; /* 标题底部分隔线 */
+  position: relative;
+}
+
+/* 标题小装饰（增强精致感） */
+.sidebar h1::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #3498db;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 侧边栏行距优化（提升呼吸感） */
+.sidebar-nav {
+  padding: 10px 0; /* 增加整体内边距 */
+}
+
+.sidebar-nav li {
+  line-height: 1.4;
+  margin: 4px 0; /* 增加项间距 */
+}
+
+.sidebar-nav li a {
+  color: #555;
+  font-size: 0.95rem;
+  padding: 8px 18px; /* 扩大点击区域 */
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+  display: flex; /* 方便后续添加图标 */
+  align-items: center;
+}
+
+/* 侧边栏链接hover效果（增强交互反馈） */
+.sidebar-nav li a:hover {
+  color: #3498db;
+  background-color: #f0f7ff;
+  border-left-color: #3498db;
+  text-decoration: none;
+  transform: translateX(2px); /* 轻微右移，增强动效 */
+}
+
+/* 侧边栏当前激活链接样式（强化选中状态） */
+.sidebar-nav li.active a {
+  color: #2980b9;
+  font-weight: 500;
+  border-left-color: #2980b9;
+  background-color: #e8f4fd; /* 加深背景色，更易识别 */
+  box-shadow: inset 0 0 10px rgba(52, 152, 219, 0.05); /* 内阴影增强层次 */
+}
+
+/* 标题样式优化：分级清晰，层次分明 */
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 30px 0 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin: 25px 0 15px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #4a6583;
+  margin: 20px 0 12px;
+  font-weight: 600;
+}
+
+h4, h5, h6 {
+  font-size: 1.1rem;
+  color: #5d6d7e;
+  margin: 18px 0 10px;
+  font-weight: 500;
+}
+
+/* 段落样式优化 */
+p {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #333;
+  text-align: justify; /* 两端对齐，更整洁 */
+}
+
+/* 链接样式优化 */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* 列表样式优化 */
+ul, ol {
+  margin: 10px 0 10px 25px;
+  padding-left: 10px;
+}
+
+li {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+/* 代码块样式（合并重复定义，保留最终配置） */
+pre {
+  background-color: #000000 !important; /* 纯黑背景 */
+  color: #e0e0e0 !important; /* 加深文字颜色，减少刺眼感 */
+  border-radius: 3px !important; /* 修正单位，保持圆角配置（若需调整可修改数值） */
+  border: none !important; /* 无边框 */
+  padding: 10px !important; /* 内边距 */
+  margin: 8px 0 !important; /* 紧凑外边距 */
+  overflow-x: auto; /* 长代码横向滚动 */
+  font-size: 0.95rem !important; /* 普通字体大小 */
+  line-height: 1.8 !important; /* 行高适中 */
+  box-shadow: none !important; /* 无阴影 */
+}
+
+/* 代码块内部嵌套code：强制继承pre样式 */
+pre > code {
+  background-color: transparent !important; /* 继承pre纯黑背景 */
+  color: inherit !important; /* 继承pre的文字颜色 */
+  border: none !important; /* 无边框 */
+  padding: 0 !important; /* 无额外内边距 */
+  border-radius: 0 !important; /* 保持直角 */
+}
+
+/* 核心：注释字体保持微软雅黑、斜体、深灰色 */
+pre .token.comment {
+  font-family: "Microsoft YaHei" !important; /* 微软雅黑字体 */
+  font-style: italic !important; /* 斜体样式 */
+  color: #666666 !important; /* 深灰色，柔和不刺眼 */
+  line-height: inherit !important;
+}
+
+/* 其他语法高亮样式 */
+pre .token.keyword { color: #7abaff !important; font-weight: 500; }
+pre .token.string { color: #a5e956 !important; }
+pre .token.function { color: #ffd700 !important; }
+pre .token.var { color: #dabaff !important; }
+pre .token.operator { color: #ff9f43 !important; }
+pre .token.number { color: #ff7979 !important; }
+pre .token.punctuation { color: #f5f5f5 !important; }
+pre .token.class-name { color: #feca57 !important; }
+
+/* 行内代码样式（独立无干扰） */
+:not(pre) > code {
+  background-color: #f1f3f5 !important; /* 浅灰背景 */
+  color: #800000 !important; /* 酒红色字体 */
+  padding: 2px 6px !important; /* 内边距 */
+  border-radius: 4px !important; /* 圆角 */
+  border: none !important; /* 无边框 */
+  font-size: 0.9rem !important; /* 字体大小 */
+  margin: 0 2px !important; /* 外边距 */
+}
+
+/* 表格自适应宽度样式 */
+table {
+  width: auto !important; /* 自适应宽度 */
+  border-collapse: collapse;
+  margin: 20px auto !important; /* 居中显示 */
+  font-size: 0.95rem;
+  max-width: 100%; /* 不超出容器 */
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #e9ecef;
+  text-align: left;
+  white-space: nowrap; /* 防止文字换行 */
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+
+tr:hover {
+  background-color: #f5f9ff;
+}
+
+/* 表格容器：移动端横向滚动 */
+.markdown-body > table {
+  display: block;
+  overflow-x: auto;
+}
+
+/* 图片样式优化 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 引用样式优化 */
+blockquote {
+  border-left: 4px solid #3498db;
+  padding: 15px 20px;
+  margin: 15px 0;
+  background-color: #f5f9ff;
+  color: #555;
+  font-style: italic;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .markdown-body {
+    padding: 20px 15px;
+    margin: 0 10px 30px;
+    box-shadow: none;
+    border-radius: 4px;
+  }
+
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; }
+
+  .sidebar {
+    box-shadow: none;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: none; /* 移动端取消高度限制，避免滚动冲突 */
+  }
+
+  table { font-size: 0.85rem; }
+  th, td { padding: 10px 12px; }
+}

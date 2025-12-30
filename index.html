@@ -1,109 +1,57 @@
+<!-- docs/index.html -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>外卖品尝师🍔的Blog - 记录成长之路</title>
+  <title>👨‍🍳外卖品尝师</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="外卖品尝师的个人技术博客，分享Linux、网络安全、Python、Java等技术学习笔记">
-  <meta name="keywords" content="技术博客,Linux,网络安全,Python,Java,ERP运维">
+  <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  
-  <!-- Docsify 主题 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
-  
-  <!-- 自定义样式 -->
-  <link rel="stylesheet" href="custom.css">
-
+  <!-- 主题样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- 外部自定义CSS（路径根据你的文件结构调整） -->
+  <link rel="stylesheet" href="./css/custom.css">
 </head>
-
-
 <body>
   <div id="app"></div>
-
+  
   <script>
-    window.$docsify = {
-      name: '<span style="color: #000;">👨‍🍳外卖品尝师技术栈</span>',
-      repo: '',
-      el: '#app',
-      loadSidebar: true,
-      autoHeader: true,
-      externalLinkTarget: '_blank',
-      topMargin: 100,
-      loadNavbar: true,
-      maxLevel: 4,
-      subMaxLevel: 4,
-      mergeNavbar: true,
-      search: {
-        placeholder: '搜索文章...',
-        noData: '没有找到相关文章'
+      window.$docsify = {
+        name: '<span>👨‍🍳外卖品尝师🥙🍤</span>',
+        repo: '',
+        el: '#app',
+        // 自动侧边栏核心配置（已合并重复项，只保留一份）
+        loadSidebar: true,        // 开启自动加载侧边栏
+        subMaxLevel: 2,           // 侧边栏显示层级（2级足够清晰，避免过深）
+        autoHeader: true,         // 自动生成标题
+        loadNavbar: true,         // 加载导航栏（_navbar.md）
+        // coverpage: true,          // 加载封面（_coverpage.md）
+        maxLevel: 5,              // 内容里标题的最大渲染层级
+        mergeNavbar: true,        // 小屏合并导航栏到侧边栏
+        // logo: '/_media/icon.svg' // 如需启用logo，取消注释并放入对应图标文件
       }
-    }
   </script>
-  
-  <!-- Docsify 核心库 -->
+
+  <!-- docsify核心JS -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  
-  <!-- 插件 -->
+  <!-- emoji表情支持 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- 图片缩放支持 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 搜索功能支持 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-
-  <!-- 简化插件加载 -->
-  <script src="https://notebook.js.org/plugin/prism-bash.min.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-javascript.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-python.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-java.js"></script>
-  <script src="https://notebook.js.org/plugin/prism-sql.js"></script>
-
-  <!-- 点击特效 -->
-  <script src="https://notebook.js.org/plugin/click_heart.js"></script>
-
-  <script>
-  // 页脚插入函数
-  function insertFooter() {
-    const footerHTML = `
-      <footer class="custom-footer">
-        <div class="footer-content">
-          <p>🍔 <strong>外卖品尝师的blog</strong> - 技术学习与成长记录</p>
-          <p>
-            <a href="/">首页</a> • 
-            <a href="https://blog.csdn.net/annita2019" target="_blank">CSDN博客</a> • 
-            <a href="javascript:void(0)" onclick="showContact()">联系我</a>
-          </p>
-          <p class="footer-copyright">
-            &copy; 2025 创建于 2025.11.26 | Powered by Docsify
-          </p>
-        </div>
-      </footer>
-    `;
-    
-    // 等待 Docsify 渲染完成
-    setTimeout(() => {
-      const content = document.querySelector('.content');
-      const markdownSection = document.querySelector('.markdown-section');
-      
-      if (content && markdownSection) {
-        // 创建页脚元素
-        const footer = document.createElement('div');
-        footer.innerHTML = footerHTML;
-        
-        // 插入到 markdown-section 后面
-        markdownSection.parentNode.insertBefore(footer, markdownSection.nextSibling);
-      }
-    }, 100);
-  }
-
-  // 初始化页脚
-  document.addEventListener('DOMContentLoaded', insertFooter);
-
-  // 监听路由变化，确保页面切换时页脚仍然存在
-  if (window.$docsify) {
-    window.$docsify.afterEach = function() {
-      setTimeout(insertFooter, 50);
-    };
-  }
-</script>
-
+  <!-- 代码复制功能 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js">
+  // 代码块高亮增强
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script> 
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+  </script>
 </body>
 </html>

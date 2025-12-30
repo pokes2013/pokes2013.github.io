@@ -1,14 +1,28 @@
-- [首页](/)
+<!-- docs/_navbar.md -->
+* <i class="fas fa-home"></i> [💒首页](/)
 
-- [Linux系统](doc/linux/list.md)
-- [网络安全](doc/network/list.md)
-  - [华为HCIE](doc/huawei/list.md)
-- [编程语言](doc/qita/list.md)
-  - [Python](doc/python/list.md)
-  - [Java](doc/java/list.md)
-- [工作记录](doc/work/list.md)
-  - [ERP运维](doc/erp/list.md)
+* <i class="fas fa-book"></i> 🏦编程学习
+  * [JAVA](/frontend/)
+  * [Python](/backend/)
+  * C语言
+  * GO语言
+  
+* <i class="fas fa-linux"></i> 📚系统运维
+  * [Linux](/doc/linux/)
+  
+  * [Ubuntu]()
 
-- [生活随笔](doc/shuo/list.md)
-  - [英语学习](doc/yingyu/list.md)
+  * [windows]()
+  
+* <i class="fas fa-tools"></i> 🚧开发工具
+  * [Git操作](/tools/git/)
+  * [Docker](/tools/docker/)
+  * [软件神器](/doc/soft/)
 
+* <i class="fas fa-link"></i> 🌜外部链接
+  * [GitHub](https://github.com/yourusername)
+  * [掘金](https://juejin.cn/user/yourid)
+
+* <i class="fas fa-info-circle"></i> ☔关于
+  * [关于我](/about/)
+  * [更新日志](/changelog/)

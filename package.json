@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "docsify-auto-sidebar": "^1.0.0"
+  }
+}
