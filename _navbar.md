@@ -10,13 +10,12 @@
   * HTML
   * CSS
   * JavaScript
-* <i class="fas fa-linux"></i> 📚系统运维
+* <i class="fas fa-linux"></i> 💾系统运维
   * [Linux](/doc/linux/)
   * [Ubuntu]()
   * [windows]()
   * [华为HCIP](/doc/huawei)
-* <i class="fas fa-tools"></i> 🚧开发工具
-
+* <i class="fas fa-tools"></i> 🛠️开发工具
   * [Git操作](/tools/git/)
   * [Docker](/tools/docker/)
   * [软件神器](/doc/soft/)
