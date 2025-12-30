@@ -12,7 +12,7 @@
   * [Linux](/doc/linux/)
   * [Ubuntu]()
   * [windows]()
-  * [华为HCIP](/huawei)
+  * [华为HCIP](/doc/huawei)
 * <i class="fas fa-tools"></i> 🚧开发工具
 
   * [Git操作](/tools/git/)

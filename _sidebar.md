@@ -3,7 +3,7 @@
 
 - 📚 系统运维
   * [💖linux系统运维心得](/doc/linux/)
-  * [🚠华为HCIP网络基础教程](/doc/network/)
+  * [🚠华为HCIP网络基础教程](/doc/huawei/)
   * [🍚服务器运维经验体会](/doc/css/)
 - 🥦 前端开发
   * [🍕网页三剑客HTML&CSS](/doc/javascript/)

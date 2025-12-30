@@ -1,7 +1,7 @@
 import os
 
 # 1. 定义java变量（可按需修改，满足变量化要求）
-java_var = "network"
+java_var = "huawei"
 
 # 2. 定义需要排除的文件列表
 exclude_files = ["_sidebar.md", "README.md"]
