@@ -1,0 +1,207 @@
+/* =============== 全局浅色主题（可选微调） =============== */
+:root {
+  --theme-color: #42b983; /* 主题色（链接、选中等）*/
+  --text-color: #333;
+  --sidebar-width: 260px;
+}
+
+body {
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+.markdown-section {
+  max-width: 800px;
+  padding: 2rem 1.5rem;
+}
+
+/* README 中的按钮样式增强 */
+.markdown-section a[style*="background"] {
+  transition: all 0.2s ease;
+}
+.markdown-section a[style*="background"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+}
+
+
+/* =============== 全局字体：微软雅黑 =============== */
+
+/* 设置整个文档区域的字体 */
+.markdown-section,
+.sidebar,
+.app-name,
+.sidebar ul li a,
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6,
+.markdown-section p,
+.markdown-section li,
+.markdown-section td,
+.markdown-section th {
+  font-family: "Microsoft YaHei", "微软雅黑", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* 特别强化标题字体（可选） */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3 {
+  font-weight: 600; /* 微软雅黑加粗更清晰 */
+}
+
+
+/* =============== 独立的行内代码样式 =============== */
+/* 确保只作用于行内代码，不作用于代码块中的 <code> */
+.markdown-section :not(pre) > code,
+.markdown-section p code,
+.markdown-section li code,
+.markdown-section td code {
+  background-color: #f0f0f0 !important;   /* 浅灰色背景 */
+  color: #e91e63 !important;             /* 粉红色文字（Material Pink 500）*/
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.92em;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+
+
+/* 文章内容核心容器：.markdown-section */
+.markdown-section {
+  max-width: 1640px;
+  padding: 40px 140px;
+  margin: 0 auto;
+  background-color: #ffffff !important;
+}
+
+/* 解除外层容器限制 */
+.content {
+  max-width: none;
+}
+
+
+/* =============== 美化 Docsify 表格 =============== */
+
+.markdown-section table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+  font-size: 0.95em;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* 轻微阴影提升层次 */
+}
+
+.markdown-section th,
+.markdown-section td {
+  padding: 0.8em 1em;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #eaecef; /* 浅灰边框 */
+}
+
+.markdown-section th {
+  background-color: #f8f9fa; /* 表头浅灰背景 */
+  font-weight: bold;
+  color: #333;
+}
+
+.markdown-section tr:nth-child(even) {
+  background-color: #fcfcfd; /* 斑马纹：偶数行浅灰 */
+}
+
+.markdown-section tr:hover {
+  background-color: #e4eaf3 !important; /* 悬停高亮 */
+}
+
+/* 响应式：小屏下允许横向滚动 */
+@media (max-width: 600px) {
+  .markdown-section table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
+/* =============== 深色代码块样式 =============== */
+
+/* 代码块 <pre><code> */
+.markdown-section pre {
+  background-color: #1e1e1e !important;
+  color: #d4d4d4 !important;
+  border-radius: 6px !important;
+  padding: 1.2em !important;
+  line-height: 1.45;
+  overflow-x: auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.markdown-section pre code {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  font-size: 0.95em;
+  line-height: inherit;
+}
+
+/* 可选：代码块中的语法高亮（依赖 docsify-plugin-prism 或默认 highlight.js） */
+/* 如果你使用的是默认的 highlight.js，以下是一些常见 token 颜色 */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a9955;
+}
+.token.punctuation {
+  color: #d4d4d4;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #b5cea8;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #ce9178;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d4d4d4;
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #c586c0;
+}
+.token.function {
+  color: #dcdcaa;
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: #d19a66;
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}

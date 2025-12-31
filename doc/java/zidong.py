@@ -13,10 +13,10 @@ sidebar_items = []
 for file_name in os.listdir("."):
     # 筛选条件：.md结尾 + 不在排除列表中
     if file_name.endswith(".md") and file_name not in exclude_files:
-        # 去除.md后缀，作为侧边栏显示文本
+        # 去除.md后缀，作为侧边栏显示文本和路径一部分
         file_title = os.path.splitext(file_name)[0]
-        # 5. 拼接指定格式的侧边栏条目（使用java变量动态生成路径）
-        sidebar_item = f"* [{file_title}](doc/{java_var}/)"
+        # 5. 拼接指定格式的侧边栏条目（包含文件名的完整路径）
+        sidebar_item = f"* [{file_title}](doc/{java_var}/{file_title})"
         sidebar_items.append(sidebar_item)
 
 # 6. 输出结果（两种方式：打印到控制台 + 可选写入_sidebar.md）

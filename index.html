@@ -10,14 +10,20 @@
   <!-- 主题样式 -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-dark.min.css">
   <!-- 外部自定义CSS（路径根据你的文件结构调整） -->
-  <link rel="stylesheet" href="./css/custom.css">
+  <!-- <link rel="stylesheet" href="./css/custom.css"> -->
+
+  <link rel="stylesheet" href="./css/qianwen.css">
 
 
 
 </head>
 <body>
   <div id="app"></div>
+  <!-- 1. Docsify 核心 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
   
   <script>
       window.$docsify = {
@@ -33,8 +39,22 @@
         maxLevel: 5,              // 内容里标题的最大渲染层级
         mergeNavbar: true,        // 小屏合并导航栏到侧边栏
         // logo: '/_media/icon.svg' // 如需启用logo，取消注释并放入对应图标文件
+
+        plugins: [
+          function(hook) {
+            hook.beforeEach(function(content) {
+              // 确保代码块语法被 Prism 识别（可选，增强兼容性）
+              return content;
+            });
+            }
+        ],
+  // 禁用默认的 highlight.js，避免冲突
+  noHighlight: true
+
       }
   </script>
+
+
 
   <!-- docsify核心JS -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -45,18 +65,18 @@
   <!-- 搜索功能支持 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <!-- 代码复制功能 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js">
-  // 代码块高亮增强
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 代码块高亮：PrismJS核心JS（必须在docsify之后引入） -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script> 
+  <!-- PrismJS语言组件（按需引入，无重复） -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-html.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
 
-  </script>
+
 </body>
 </html>
