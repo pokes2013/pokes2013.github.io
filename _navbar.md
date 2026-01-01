@@ -15,7 +15,7 @@
   * [🥣windows运维](/doc/windows/)
   * [🥣华为HCIP网路](/doc/huawei/)
 * <i class="fas fa-tools"></i> 🛠️开发工具
-  * [🚀Git操作](/tools/git/)
+  * [🚀Git操作](/doc/git/)
   * [🚀Docker](/tools/docker/)
   * [🚀软件神器](/doc/soft/)
 * <i class="fas fa-link"></i> 🌜外部链接
