@@ -128,133 +128,101 @@ body {
 
 /* =============== 深色代码块样式 =============== */
 
-/* 代码块 <pre><code> */
-.markdown-section pre {
-  background-color: #1e1e1e !important;
-  color: #d4d4d4 !important;
-  border-radius: 6px !important;
-  padding: 1.2em !important;
-  line-height: 1.45;
-  overflow-x: auto;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-}
+   /* 代码块头部图标 */
+    .markdown-section pre:before {
+      content: '';
+      display: block;
+      background: url(https://notebook.js.org/images/20220519-02-myinfo.png);
+      height: 30px;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-color: #1C1C1C;
+      background-position: 10px 10px;
+    }
 
-.markdown-section pre code {
-  background-color: transparent !important;
-  color: inherit !important;
-  padding: 0 !important;
-  font-size: 0.95em;
-  line-height: inherit;
-}
+    /* 代码块内部代码样式 */
+    .markdown-section pre>code {
+      color: #c0c3c1 !important;
+      font-family: 'Inconsolata', consolas,"PingFang SC", "Microsoft YaHei", monospace !important;
+      background-color: #212121 !important;
+      font-size: 15px !important;
+      white-space: pre !important;
+      line-height: 1.5 !important;
+      -moz-tab-size: 4 !important;
+      -o-tab-size: 4 !important;
+      tab-size: 4 !important;
+    }
 
-/* 可选：代码块中的语法高亮（依赖 docsify-plugin-prism 或默认 highlight.js） */
-/* 如果你使用的是默认的 highlight.js，以下是一些常见 token 颜色 */
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #6a9955;
-}
-.token.punctuation {
-  color: #d4d4d4;
-}
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #b5cea8;
-}
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #ce9178;
-}
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-  color: #d4d4d4;
-}
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: #c586c0;
-}
-.token.function {
-  color: #dcdcaa;
-}
-.token.regex,
-.token.important,
-.token.variable {
-  color: #d19a66;
-}
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-.token.italic {
-  font-style: italic;
-}
-.token.entity {
-  cursor: help;
-}
+    /* 列表样式 */
+    ol, ul, li {
+      line-height: 27px !important;
+      font-size: 16px !important;
+    }
+    
+    /* 大屏幕设备代码样式 */
+    @media (min-width:600px) {
+      .markdown-section pre>code {
+        font-size: 15px !important;
+        letter-spacing: 1.1px !important;
+      }
+    }
+    
+    /* 封面标题样式 */
+    section.cover h1 {
+      margin: 0;
+    }
+
+    /* 代码块背景色 */
+    pre {
+      background-color: #212121 !important;
+    }
+
+    /* 大屏幕代码块样式 */
+    @media (min-width:600px) {
+      pre code {
+        padding-left: 20px !important;
+      }
+    }
+
+    /* 移动端代码块和广告隐藏 */
+    @media (max-width:600px) {
+      pre {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+      /* 移动端隐藏复制按钮 */
+      .docsify-copy-code-button {
+        display: none;
+      }
+
+      /* 移动端隐藏广告 */
+      .advertisement {
+        display: none;
+      }
+    }
+
+    /* 代码块左右边距 */
+    .markdown-section pre {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    /* 代码高亮颜色配置 */
+    .token.directive.keyword { color: #4faee2 !important; }
+    .token.keyword { color: #c678dd !important; }
+    .token.comment { color: #737c8b !important; }
+    .token.tag { color: #a589ad !important; }
+    .token.attr-name { color: #de916c !important; }
+    .token.attr-value { color: #4faee2 !important; }
+    .token.macro.property { color: #4faee2 !important; }
+    .token.function { color: #e6b456 !important; }
+    .token.string { color: #98b755 !important; }
+    .token.punctuation { color: #c0c3c1 !important; }
+    .token.number { color:#c0c3c1 !important; }
 
 
 /* 页脚内容居中 + 限制宽度 */
 
-/* 适配 docsify 插件注入的页脚样式 */
-/* 1. 美化分隔线 hr（分隔正文与页脚） */
-.markdown-section hr {
-  border: none; /* 清除默认边框样式 */
-  border-top: 1px solid #eee; /* 自定义浅灰色分隔线 */
-  margin: 2rem auto 1rem; /* 上下间距，水平居中 */
-  width: 90%; /* 分隔线宽度，避免全屏过宽 */
-}
-
-/* 2. 页脚整体样式 */
-.markdown-section footer {
-  text-align: center; /* 文字水平居中（核心） */
-  font-size: 14px; /* 页脚字体大小，比正文稍小 */
-  color: #666; /* 文字默认浅灰色，符合页脚视觉 */
-  padding: 1rem 0 2rem; /* 上下内边距，避免拥挤 */
-  line-height: 1.8; /* 行高，提升可读性 */
-}
-
-/* 3. 页脚内两个span的间距（避免文字挤在一起） */
-.markdown-section footer span {
-  display: inline-block; /* 行内块布局，方便设置间距 */
-  margin: 0 0.5rem; /* 左右间距，适配桌面端 */
-}
-
-/* 4. 页脚链接样式（pokes 和 docsify 链接统一美化） */
-.markdown-section footer a {
-  color: #42b983; /* docsify 主题默认高亮色，视觉统一 */
-  text-decoration: none; /* 清除默认下划线 */
-  transition: all 0.3s ease; /* 过渡动画，hover效果更平滑 */
-}
-
-/* 5. 链接 hover 交互效果（提升用户体验） */
-.markdown-section footer a:hover {
-  color: #2f54eb; /*  hover 时切换深蓝色 */
-  text-decoration: underline; /*  hover 时显示下划线，提示可点击 */
-}
-
-/* 6. 响应式适配（移动端优化） */
-@media (max-width: 768px) {
-  .markdown-section footer {
-    font-size: 12px; /* 移动端字体缩小，适配小屏幕 */
-    padding: 0.8rem 0 1.5rem; /* 移动端减小内边距 */
-  }
-
-  .markdown-section footer span {
-    display: block; /* 移动端两个span换行显示，避免横向拥挤 */
-    margin: 0.3rem 0; /* 纵向间距，替代横向间距 */
-  }
-}
