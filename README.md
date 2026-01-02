@@ -96,6 +96,3 @@ Git · Docker · Linux · VSCode · Nginx
 
 > 💌 **觉得有用？** 给个 ⭐ Star 支持一下！  
 > 💡 **有更好的想法？** 欢迎 [提交建议](https://github.com/yourusername/issues)！
-
-© 2024 pokes 的学习笔记 | 最后更新: 2024年1月15日  
-[GitHub](https://github.com/yourusername) · [RSS 📡](/rss.xml)
