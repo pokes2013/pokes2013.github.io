@@ -27,6 +27,7 @@
 * <i class="fas fa-info-circle"></i> 🌹关于生活
   * [🍤生活随笔](doc/suibi/)
   * [🍤关于工作](doc/work/)
+  * [🍤ERP运维](doc/erp/)
   * [🍤关于我](/doc/about/)
   * [🍤其他文件](/doc/qita/)
   * [🍤更新日志](/changelog/)
