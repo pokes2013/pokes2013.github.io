@@ -1,7 +1,9 @@
 import os
 
-# 1. 定义java变量（可按需修改，满足变量化要求）
-java_var = "huawei"
+# 1. 定义变量为当前目录的名字（替换原固定的java字符串）
+current_dir_name = os.path.basename(os.getcwd())
+# 保持变量兼容性（如需沿用原java_var变量名，可添加这行）
+java_var = current_dir_name
 
 # 2. 定义需要排除的文件列表
 exclude_files = ["_sidebar.md", "README.md"]
@@ -13,11 +15,10 @@ sidebar_items = []
 for file_name in os.listdir("."):
     # 筛选条件：.md结尾 + 不在排除列表中
     if file_name.endswith(".md") and file_name not in exclude_files:
-        # 去除.md后缀，作为侧边栏显示文本
+        # 去除.md后缀，作为侧边栏显示文本和路径一部分
         file_title = os.path.splitext(file_name)[0]
-        # 5. 修正路径拼接：去掉末尾斜杠 + 拼接具体文件名
-        # 正确格式：doc/{java_var}/{file_name}（指向具体.md文件）
-        sidebar_item = f"* [{file_title}](doc/{java_var}/{file_name})"
+        # 5. 拼接指定格式的侧边栏条目（包含文件名的完整路径，现在使用当前目录名）
+        sidebar_item = f"* [{file_title}](doc/{java_var}/{file_title})"
         sidebar_items.append(sidebar_item)
 
 # 6. 输出结果（两种方式：打印到控制台 + 可选写入_sidebar.md）
@@ -35,3 +36,4 @@ if __name__ == "__main__":
     
     print("-" * 20)
     print(f"成功生成 {len(sidebar_items)} 个侧边栏条目，已写入 _sidebar.md 文件")
+    print(f"当前使用的目录名称：{java_var}")  # 新增：打印当前目录名，便于验证

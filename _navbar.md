@@ -16,7 +16,10 @@
   * [🥣华为HCIP网路](/doc/huawei/)
 * <i class="fas fa-tools"></i> 🛠️开发工具
   * [🚀Git操作](/doc/git/)
-  * [🚀Docker](/tools/docker/)
+  * [🚀Nginx](/doc/nginx/)
+  * [🚀Docker](/doc/docker/)
+  * [🚀Mysql](/doc/mysql/)
+  * [🚀zabbix](/doc/zabbix/)
   * [🚀软件神器](/doc/soft/)
 * <i class="fas fa-link"></i> 🌜外部链接
   * [🍖GitHub](https://github.com/pokes2013?tab=repositories)
