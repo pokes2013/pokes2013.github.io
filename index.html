@@ -7,75 +7,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <!-- 主题样式 -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  
+  <!-- 主题样式（保留你的 docsify-themeable 主题，兼容代码高亮） -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-dark.min.css">
-  <!-- 外部自定义CSS（路径根据你的文件结构调整） -->
-  <!-- <link rel="stylesheet" href="./css/custom.css"> -->
-
+  
+  
+  <!-- 你的自定义 CSS（保留原有配置） -->
   <link rel="stylesheet" href="./css/qianwen.css">
 
+  <!-- 在 Docsify 核心 JS 前添加这些 -->
+  <!-- Prism.js 核心 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
+  <!-- 可选：如果你需要代码行号功能 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.css">
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
 </head>
 <body>
   <div id="app"></div>
-  <!-- 1. Docsify 核心 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
-  
   <script>
       window.$docsify = {
-        name: '<span>👨‍🍳外卖品尝师</span>',
-        repo: '',
-        el: '#app',
-        // 自动侧边栏核心配置（已合并重复项，只保留一份）
-        loadSidebar: true,        // 开启自动加载侧边栏
-        subMaxLevel: 2,           // 侧边栏显示层级（2级足够清晰，避免过深）
-        autoHeader: true,         // 自动生成标题
-        loadNavbar: true,         // 加载导航栏（_navbar.md）
-        coverpage: false,          // 加载封面（_coverpage.md）
-        maxLevel: 5,              // 内容里标题的最大渲染层级
-        mergeNavbar: true,        // 小屏合并导航栏到侧边栏
-        // logo: '/_media/icon.svg' // 如需启用logo，取消注释并放入对应图标文件
-
         plugins: [
           function(hook) {
-            hook.beforeEach(function(content) {
-              // 确保代码块语法被 Prism 识别（可选，增强兼容性）
-              return content;
-            });
-            }
-        ],
-  // 禁用默认的 highlight.js，避免冲突
-  noHighlight: true
+            var footer = [
+              '<hr/>',
+              '<footer>',
+              '<span><a href="https://github.com/spokes">pokes</a> &copy;2025.</span>',
+              '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+              '</footer>'
+            ].join('');
 
+            hook.afterEach(function(html) {
+              return html + footer;
+            });
+          }
+        ],
+
+        name: '<span>👨‍🍳外卖品尝师</span>',
+        repo: '',
+        loadSidebar: true,        // 开启自动加载侧边栏
+        subMaxLevel: 2,           // 侧边栏显示层级
+        autoHeader: true,         // 自动生成标题
+        loadNavbar: true,         // 加载导航栏（_navbar.md）
+        coverpage: false,         // 关闭封面
+        maxLevel: 5,              // 内容标题最大渲染层级
+        mergeNavbar: true         // 小屏合并导航栏到侧边栏
+        // logo: '/_media/icon.svg' // 如需启用logo，取消注释并放入对应图标文件
       }
   </script>
 
-
-
-  <!-- docsify核心JS -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- 最后加载 Docsify -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <!-- emoji表情支持 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <!-- 图片缩放支持 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-  <!-- 搜索功能支持 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 全文搜索插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <!-- 代码复制功能 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <!-- 代码块高亮：PrismJS核心JS（必须在docsify之后引入） -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-  <!-- PrismJS语言组件（按需引入，无重复） -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-html.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 分页导航插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <!-- 回到顶部插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-back-to-top@1/dist/docsify-back-to-top.min.js"></script>
+  <!-- 侧边栏折叠插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse@1/dist/docsify-sidebar-collapse.min.js"></script>
+
 
 
 </body>
