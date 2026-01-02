@@ -225,4 +225,56 @@ body {
 
 
 /* 页脚内容居中 + 限制宽度 */
+/* 页脚内容居中 + 限制宽度 */
+
+/* 适配 docsify 插件注入的页脚样式 */
+/* 1. 美化分隔线 hr（分隔正文与页脚） */
+.markdown-section hr {
+  border: none; /* 清除默认边框样式 */
+  border-top: 1px solid #eee; /* 自定义浅灰色分隔线 */
+  margin: 2rem auto 1rem; /* 上下间距，水平居中 */
+  width: 90%; /* 分隔线宽度，避免全屏过宽 */
+}
+
+/* 2. 页脚整体样式 */
+.markdown-section footer {
+  text-align: center; /* 文字水平居中（核心） */
+  font-size: 14px; /* 页脚字体大小，比正文稍小 */
+  color: #666; /* 文字默认浅灰色，符合页脚视觉 */
+  padding: 1rem 0 2rem; /* 上下内边距，避免拥挤 */
+  line-height: 1.8; /* 行高，提升可读性 */
+}
+
+/* 3. 页脚内两个span的间距（避免文字挤在一起） */
+.markdown-section footer span {
+  display: inline-block; /* 行内块布局，方便设置间距 */
+  margin: 0 0.5rem; /* 左右间距，适配桌面端 */
+}
+
+/* 4. 页脚链接样式（pokes 和 docsify 链接统一美化） */
+.markdown-section footer a {
+  color: #42b983; /* docsify 主题默认高亮色，视觉统一 */
+  text-decoration: none; /* 清除默认下划线 */
+  transition: all 0.3s ease; /* 过渡动画，hover效果更平滑 */
+}
+
+/* 5. 链接 hover 交互效果（提升用户体验） */
+.markdown-section footer a:hover {
+  color: #2f54eb; /*  hover 时切换深蓝色 */
+  text-decoration: underline; /*  hover 时显示下划线，提示可点击 */
+}
+
+/* 6. 响应式适配（移动端优化） */
+@media (max-width: 768px) {
+  .markdown-section footer {
+    font-size: 12px; /* 移动端字体缩小，适配小屏幕 */
+    padding: 0.8rem 0 1.5rem; /* 移动端减小内边距 */
+  }
+
+  .markdown-section footer span {
+    display: block; /* 移动端两个span换行显示，避免横向拥挤 */
+    margin: 0.3rem 0; /* 纵向间距，替代横向间距 */
+  }
+}
+测试
 

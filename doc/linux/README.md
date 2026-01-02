@@ -23,3 +23,9 @@
 - [21.持续集成与部署CICD](./doc/linux/21.持续集成与部署CICD)
 - [22.性能优化](./doc/linux/22.性能优化)
 - [23.高可用架构设计](./doc/linux/23.高可用架构设计)
+
+
+
+## 服务部署
+
+- [samba配置文件-探究](./doc/linux/service/samba配置文件-探究)
