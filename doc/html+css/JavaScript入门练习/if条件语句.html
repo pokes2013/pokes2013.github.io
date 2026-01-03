@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let time = 12;
+
+      //   单个IF
+      if (time < 18) {
+        console.log("白天好");
+      }
+
+      //   单个if...else组合
+      if (time < 18) {
+        console.log("白天好");
+      } else {
+        console.log("晚上好");
+      }
+
+      //   单个if...多个else组合
+
+      if (time < 10) {
+        document.write("<b>早上好</b>");
+      } else if (time >= 10 && time < 14) {
+        document.write("<b>中午好</b>");
+      } else if (time >= 14 && time < 18) {
+        document.write("<b>下午好!</b>");
+      } else {
+        document.write("晚上好");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="FE4401E2-4B6B-436d-9B75-4CAE926FD8B1" name="STA2" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-08-06-C2  -simsta_check 0 " system_mac="54-89-98-08-06-C2" com_port="0" bootmode="1" cx="249.000000" cy="360.000000" edit_left="276" edit_top="414">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="BADFD8D2-18BA-4b78-A04A-34F1C64790E1" name="AP1" poe="0" model="AP6050" settings=" -apMac 00-E0-FC-59-48-F0 -apSN 210235448310CE040958" system_mac="00-E0-FC-59-48-F0" com_port="2001" bootmode="0" cx="398.000000" cy="122.000000" edit_left="425" edit_top="176">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="176B6CE4-2AB7-4871-9C70-AAC2EFC4E0E7" name="AP2" poe="0" model="AP6050" settings=" -apMac 00-E0-FC-D9-2C-C0 -apSN 210235448310D04AD072" system_mac="00-E0-FC-D9-2C-C0" com_port="2002" bootmode="0" cx="403.000000" cy="360.000000" edit_left="430" edit_top="414">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8A4E25BA-EC7B-4394-AC72-B7CC26871A53" name="STA1" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-1F-6D-AE  -simsta_check 0 " system_mac="54-89-98-1F-6D-AE" com_port="0" bootmode="1" cx="262.000000" cy="122.000000" edit_left="289" edit_top="176">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="14000C05-089A-4704-A982-61C03B11B106" name="AC1" poe="0" model="AC6605" settings="" system_mac="00-E0-FC-27-54-10" com_port="2000" bootmode="0" cx="656.000000" cy="241.000000" edit_left="683" edit_top="295">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="F8D4C689-85B7-482f-A75E-C9C5A456C1A9" name="AR1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-F3-43-17" com_port="2003" bootmode="0" cx="920.000000" cy="241.000000" edit_left="947" edit_top="295">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="BADFD8D2-18BA-4b78-A04A-34F1C64790E1" destDeviceID="14000C05-089A-4704-A982-61C03B11B106">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="464.213562" srcBoundRect_Y="167.086868" srcOffset_X="0.000000" srcOffset_Y="-13.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="643.786438" tarBoundRect_Y="249.913132" tarOffset_X="-46.000000" tarOffset_Y="2.000000" />
+        </line>
+        <line srcDeviceID="14000C05-089A-4704-A982-61C03B11B106" destDeviceID="176B6CE4-2AB7-4871-9C70-AAC2EFC4E0E7">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="643.923035" srcBoundRect_Y="286.380066" srcOffset_X="-46.000000" srcOffset_Y="-12.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="469.076965" tarBoundRect_Y="368.619934" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="14000C05-089A-4704-A982-61C03B11B106" destDeviceID="F8D4C689-85B7-482f-A75E-C9C5A456C1A9">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="726.183777" srcBoundRect_Y="268.000000" srcOffset_X="-9.000000" srcOffset_Y="7.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="903.816223" tarBoundRect_Y="268.000000" tarOffset_X="-55.000000" tarOffset_Y="8.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="730" top="386" right="893" bottom="450" content="vlan 100 管理&#x0D;&#x0A;vlan 101 用户群A&#x0D;&#x0A;vlan 102 用户群B&#x0D;&#x0A;vlan 800 和路由器直连" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="780" top="225" right="837" bottom="242" content="vlan800" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711681" charset="1" />
+        <txttip left="619" top="218" right="676" bottom="235" content="vlan101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711681" charset="1" />
+        <txttip left="615" top="311" right="672" bottom="328" content="vlan102" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711681" charset="1" />
+        <txttip left="554" top="149" right="611" bottom="166" content="vlan100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711681" charset="1" />
+        <txttip left="547" top="370" right="604" bottom="387" content="vlan100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711681" charset="1" />
+        <txttip left="551" top="184" right="593" bottom="201" content="trunk" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32576" charset="1" />
+        <txttip left="553" top="335" right="595" bottom="352" content="trunk" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32576" charset="1" />
+        <txttip left="763" top="247" right="888" bottom="264" content="192.168.240.0/30" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="122" top="133" right="247" bottom="181" content="vlan101&#x0D;&#x0A;用户群A&#x0D;&#x0A;192.168.101.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711808" charset="1" />
+        <txttip left="117" top="369" right="242" bottom="417" content="vlan102&#x0D;&#x0A;用户群B&#x0D;&#x0A;192.168.102.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711808" charset="1" />
+        <txttip left="705" top="246" right="724" bottom="263" content=".1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="895" top="247" right="914" bottom="264" content=".2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="535" top="59" right="771" bottom="86" content="AP+AC直连式三层组网" fontname="Consolas" fontstyle="0" editsize="160" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+    </txttips>
+</topo>

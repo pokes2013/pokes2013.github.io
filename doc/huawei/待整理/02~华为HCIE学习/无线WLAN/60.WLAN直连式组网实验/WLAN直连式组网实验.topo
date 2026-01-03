@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="68F33653-2F0D-4775-94B4-1101C58CFA12" name="Cellphone1" poe="0" model="Cellphone" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-08-4B-E8  -simsta_check 0 " system_mac="54-89-98-08-4B-E8" com_port="0" bootmode="0" cx="326.000000" cy="601.000000" edit_left="353" edit_top="655">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="2F5A03CC-6BD6-42fd-9882-0EF9158277E1" name="STA1" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-D2-45-1E  -simsta_check 0 " system_mac="54-89-98-D2-45-1E" com_port="0" bootmode="0" cx="320.000000" cy="364.000000" edit_left="347" edit_top="418">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="6F5D6060-C409-46c1-B413-21C36B9D36DE" name="AR" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-66-4F-C1" com_port="2002" bootmode="0" cx="1100.000000" cy="482.000000" edit_left="1126" edit_top="457">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="7B047B95-ED01-40f9-83B7-02493CA67669" name="AP2" poe="0" model="AP6050" settings=" -apMac 00-E0-FC-87-3D-90 -apSN 21023544831011352620" system_mac="00-E0-FC-87-3D-90" com_port="2005" bootmode="0" cx="484.000000" cy="601.000000" edit_left="511" edit_top="655">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="2CFE339C-F712-462a-9BC0-963866B5F29F" name="AC" poe="1" model="AC6605" settings="" system_mac="00-E0-FC-02-55-71" com_port="2006" bootmode="0" cx="711.000000" cy="481.000000" edit_left="753" edit_top="460">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="3F9FE532-83EE-4975-AA02-3C29073EC98E" name="AP1" poe="0" model="AP6050" settings=" -apMac 00-E0-FC-7A-4C-D0 -apSN 2102354483105B278C64" system_mac="00-E0-FC-7A-4C-D0" com_port="2001" bootmode="0" cx="484.000000" cy="364.000000" edit_left="511" edit_top="418">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="3F9FE532-83EE-4975-AA02-3C29073EC98E" destDeviceID="2CFE339C-F712-462a-9BC0-963866B5F29F">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="549.385071" srcBoundRect_Y="410.784393" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="699.614929" tarBoundRect_Y="488.215607" tarOffset_X="-20.000000" tarOffset_Y="-22.000000" />
+        </line>
+        <line srcDeviceID="7B047B95-ED01-40f9-83B7-02493CA67669" destDeviceID="2CFE339C-F712-462a-9BC0-963866B5F29F">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="549.177551" srcBoundRect_Y="607.818054" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="699.822449" tarBoundRect_Y="528.181946" tarOffset_X="-18.000000" tarOffset_Y="14.000000" />
+        </line>
+        <line srcDeviceID="2CFE339C-F712-462a-9BC0-963866B5F29F" destDeviceID="6F5D6060-C409-46c1-B413-21C36B9D36DE">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="781.183594" srcBoundRect_Y="508.111023" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="1083.816406" tarBoundRect_Y="508.888977" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="320" top="328" right="377" bottom="345" content="vlan101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="320" top="576" right="377" bottom="593" content="vlan102" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="705" top="176" right="898" bottom="193" content="WAN直连式组网实验（二层）" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+        <txttip left="627" top="426" right="669" bottom="443" content="trunk" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32576" charset="1" />
+        <txttip left="632" top="573" right="674" bottom="590" content="trunk" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32576" charset="1" />
+        <txttip left="580" top="211" right="924" bottom="228" content="AC当成三层交换机使用，并给AP1和AP2进行POE供电" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="782" top="246" right="929" bottom="310" content="vlan100 管理使用&#x0D;&#x0A;vlan101 用户群A&#x0D;&#x0A;vlan102用户群B&#x0D;&#x0A;vlan800和路由器相连" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="784" top="527" right="909" bottom="544" content="192.168.240.1/30" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="999" top="528" right="1124" bottom="545" content="192.168.240.2/30" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+        <txttip left="916" top="482" right="973" bottom="499" content="vlan800" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+    </txttips>
+</topo>

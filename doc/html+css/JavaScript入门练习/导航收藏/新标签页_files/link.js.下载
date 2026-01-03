@@ -1,0 +1,27 @@
+
+var link = {
+	'https://ju.taobao.com':'http://news.toutiaobashi.com/?qid=t_You123',
+	'http://ai.taobao.com/':'https://ai.taobao.com?pid=mm_131311678_42824299_264092963',
+	'https://www.hao123.com/':'https://www.hao123.com/?tn=90273929_hao_pg',
+	'http://www.hao123.com':'https://www.hao123.com/?tn=90273929_hao_pg',
+	'http://mini.eastday.com':'https://www.2345.com/?38738',
+};  
+
+$(function(){
+	baiduurl = 'https://www.baidu.com/s?tn=90273929_hao_pg&ie=utf-8&wd=';
+	$('a').each(function(k,v){
+		var href = $(v).attr('href');
+		if (link[href]) {
+			$(v).attr('href',link[href]);
+		}
+		if (href == 'http://mini.eastday.com')
+		{
+			$(v).children('img').attr('src','http://www.xinzhuoxun.com/YouBrowser/you123/2345.png');
+		}
+		if (href == 'https://ju.taobao.com')
+		{
+			$(v).children('img').attr('src','http://www.xinzhuoxun.com/YouBrowser/you123/ttbs.jpg');
+		}
+	})
+})
+

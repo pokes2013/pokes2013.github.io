@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // For循环
+      document.write("<h2>For循环</h2>");
+      document.write("<hr>");
+
+
+      for (let i = 1; i < 5; i++) {
+        document.write("我是for循环<br>");
+      }
+
+      //For循环遍历数组
+      document.write("<h2>For循环遍历数组</h2>");
+      document.write("<hr>");
+
+
+      let arr = ["我是01", "我是02", "我是03", "我是04", "我是05"];
+      document.write(arr+'<br>');
+
+      // 数组的长度减1就是这个数组的所有下标（arr.length - 1）
+      
+      for (let i = 0; i <= arr.length - 1; i++) {
+        document.write(arr[i]+'<br>');
+        console.log(arr[i]);
+      }
+    </script>
+  </body>
+</html>

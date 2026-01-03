@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="ECB4CD1D-6838-4dde-A949-74EA9E9B9997" name="LSW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-B5-16-5D" com_port="2001" bootmode="0" cx="345.000000" cy="355.000000" edit_left="372" edit_top="409">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="1994543A-0AEB-43fa-91BA-05F980DC5999" name="PC2" poe="0" model="PC" settings=" -simpc_ip 192.168.1.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.1.1  -simpc_mac 54-89-98-AE-56-74  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-AE-56-74" com_port="0" bootmode="0" cx="467.000000" cy="483.000000" edit_left="494" edit_top="537">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="C8E8841A-FFA5-4f62-88D9-96D7B7060424" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.1.254  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.1.1  -simpc_mac 54-89-98-25-08-53  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-25-08-53" com_port="0" bootmode="0" cx="208.000000" cy="480.000000" edit_left="235" edit_top="534">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="A67B4B61-9712-4ef3-A069-E2408E8D9EFE" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-55-0E-66" com_port="2000" bootmode="0" cx="344.000000" cy="150.000000" edit_left="378" edit_top="127">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A67B4B61-9712-4ef3-A069-E2408E8D9EFE" destDeviceID="ECB4CD1D-6838-4dde-A949-74EA9E9B9997">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="371.210663" srcBoundRect_Y="220.183258" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="371.789337" tarBoundRect_Y="338.816742" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="ECB4CD1D-6838-4dde-A949-74EA9E9B9997" destDeviceID="C8E8841A-FFA5-4f62-88D9-96D7B7060424">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="340.099335" srcBoundRect_Y="411.106445" srcOffset_X="-92.000000" srcOffset_Y="-6.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="266.900665" tarBoundRect_Y="477.893555" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="ECB4CD1D-6838-4dde-A949-74EA9E9B9997" destDeviceID="1994543A-0AEB-43fa-91BA-05F980DC5999">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="401.794098" srcBoundRect_Y="413.259399" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="464.205902" tarBoundRect_Y="478.740601" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="538" top="181" right="927" bottom="276" content="[Huawei]int g0/0/0&#x0D;&#x0A;[Huawei-GigabitEthernet0/0/0]ip add 192.168.1.1 24&#x0D;&#x0A;[Huawei-GigabitEthernet0/0/0]q&#x09;&#x0D;&#x0A;[Huawei]dhcp enable &#x0D;&#x0A;[Huawei]int g0/0/0&#x09;&#x0D;&#x0A;[Huawei-GigabitEthernet0/0/0]dhcp select interface" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="279" top="219" right="366" bottom="236" content="192.168.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="348" top="52" right="443" bottom="69" content="×î¼òµ¥µÄDHCP" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
