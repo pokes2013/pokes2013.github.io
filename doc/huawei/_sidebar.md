@@ -32,3 +32,4 @@
 * [32、华为防火墙](doc/huawei/32、华为防火墙)
 * [33、中恒普瑞与集团VPN对接项目](doc/huawei/33、中恒普瑞与集团VPN对接项目)
 * [50、MPLS动态LSP配置实验](doc/huawei/50、MPLS动态LSP配置实验)
+* [51.BGP基础笔记](doc/huawei/51.BGP基础笔记)
