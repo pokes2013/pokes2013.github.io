@@ -1,0 +1,8 @@
+* [01.Linux子系统的安装和基本操作](doc/windows/01.Linux子系统的安装和基本操作)
+* [02.Linux子系统管理工具WSL2-Distro-Manager](doc/windows/02.Linux子系统管理工具WSL2-Distro-Manager)
+* [03.SoftEtherVPN部署教程-最终版](doc/windows/03.SoftEtherVPN部署教程-最终版)
+* [04.读取登录失败的记录事件](doc/windows/04.读取登录失败的记录事件)
+* [05.命令行修改系统的环境变量PATH](doc/windows/05.命令行修改系统的环境变量PATH)
+* [06.windwos加路由](doc/windows/06.windwos加路由)
+* [安全运维工程师入门阶段每周学习计划表(共24周)](doc/windows/安全运维工程师入门阶段每周学习计划表(共24周))
+* [安全运维工程师都需要会什么](doc/windows/安全运维工程师都需要会什么)
