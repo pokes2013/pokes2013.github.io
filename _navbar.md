@@ -14,6 +14,7 @@
   * [🥣Ubuntu熟悉](/doc/ubuntu/)
   * [🥣windows运维](/doc/windows/)
   * [🥣华为HCIP网路](/doc/huawei/)
+  * [🥣ERP系统运维](/doc/erp/)
 * <i class="fas fa-tools"></i> 🛠️开发工具
   * [🚀Git操作](/doc/git/)
   * [🚀Nginx](/doc/nginx/)
@@ -27,7 +28,6 @@
 * <i class="fas fa-info-circle"></i> 🌹关于生活
   * [🍤生活随笔](doc/suibi/)
   * [🍤关于工作](doc/work/)
-  * [🍤ERP运维](doc/erp/)
   * [🍤关于我](/doc/about/)
   * [🍤其他文件](/doc/qita/)
   * [🍤更新日志](/changelog/)
