@@ -7,8 +7,9 @@
   * [📝C语言学习笔记]()
   * [📝GO语言学习笔记]()
 * <i class="fas fa-linux"></i> 📚前端学习
-  * [⚡HTML+CSS](doc/html+css/)
-  * [⚡JavaScript]()
+  * [⚡HTML基础学习](doc/html/)
+  * [⚡CSS基础学习](doc/css/)
+  * [⚡JavaScript基础学习](doc/JavaScript/)
 * <i class="fas fa-linux"></i> 💾系统运维
   * [🥣Linux系统运维](/doc/linux/)
   * [🥣Ubuntu熟悉](/doc/ubuntu/)
