@@ -5,30 +5,67 @@
 
 
 
+
+
+## 前置说明
+
+JavaScript 是**脚本语言**，它的代码必须依赖 HTML 页面才能运行，浏览器在解析 HTML 时，遇到 JS 代码会调用 JS 引擎执行，这也是所有引入方式的前提。
+
+
+
 ## 引入方式
 
-1. 内部方式
+JavaScript 代码在 HTML 页面中有 **三种标准、常用的引入方式**，分别是：**行内引入、内部引入、外部引入**，三种方式各有适用场景，下面逐一详细讲解，所有示例可直接复制运行。
+
+1. 行内引入
+
+✅ 语法特点
+将 JavaScript 代码直接写在 HTML 标签的事件属性中，是最原始、最基础的引入方式。
+核心依赖：HTML 标签的事件属性（以on开头的属性），最常用的是 onclick（点击事件）、onmouseover（鼠标悬浮事件）等。
+✅ 代码示例
+
+```javascript
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>行内引入JS</title>
+</head>
+<body>
+    <!-- 点击按钮，执行行内的JS代码：弹窗提示 -->
+    <button onclick="alert('你点击了按钮，这是行内JS效果')">点我试试</button>
+    <!-- 鼠标悬浮到div上，执行行内的JS代码：弹窗提示 -->
+    <div onmouseover="alert('鼠标悬浮上来了')" style="width:100px;height:100px;background:red;">悬浮我</div>
+</body>
+</html>
+```
+
+
+
+1. 内部引入
 
 通过 `script` 标签包裹 JavaScript 代码。
 
 ```javascript
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>JavaScript 基础 - 引入方式</title>
+  <meta charset="UTF-8">
+  <title>JavaScript 基础 - 引入方式</title>
 </head>
+
 <body>
-<!-- 内联形式：通过 script 标签包裹 JavaScript 代码 -->
-<script>
-  alert('hello word')
-</script>
+  <!-- 内联形式：通过 script 标签包裹 JavaScript 代码 -->
+  <script>
+    alert('hello word')
+  </script>
 </body>
+
 </html>
-javascript12345678910111213
 ```
 
-2. 外部形式
+2. 外部引入
 
 一般将 JavaScript 代码写在独立的以.js 结尾的文件中，然后通过 `script` 标签的 `src` 属性引入。
 
