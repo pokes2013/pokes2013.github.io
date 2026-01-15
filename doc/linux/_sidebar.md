@@ -1,6 +1,7 @@
 * [00.Linux都要到什么程度才可以做运维](doc/linux/00.Linux都要到什么程度才可以做运维.md)
 * [01.系统安装与环境搭建](doc/linux/01.系统安装与环境搭建.md)
-* [02.命令行基础](doc/linux/02.命令行基础.md)
+* [02-0.命令行基础](doc/linux/02-0.命令行基础.md)
+* [02-1.top命令图解](doc/linux/02-1.top命令图解.md)
 * [03.文件系统与权限](doc/linux/03.文件系统与权限.md)
 * [04.系统管理基础](doc/linux/04.系统管理基础.md)
 * [05.软件包管理](doc/linux/05.软件包管理.md)
@@ -18,3 +19,4 @@
 * [21.持续集成与部署CICD](doc/linux/21.持续集成与部署CICD.md)
 * [22.性能优化](doc/linux/22.性能优化.md)
 * [23.高可用架构设计](doc/linux/23.高可用架构设计.md)
+* [99.Linux学习手册](doc/linux/99.Linux学习手册.md)
