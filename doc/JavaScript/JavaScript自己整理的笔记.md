@@ -1388,3 +1388,45 @@ document.write(num)
   ```
 
 多个立即执行函数要用; 隔开，要不然会报错。
+
+## 11、逻辑中断
+
+逻辑运算符里的短路
+
+短路：只存在于 && 和 || 中，当满足一定条件会让右边代码不执行
+
+| 符号 | 短路条件          |
+| :--- | :---------------- |
+| &&   | 左边为false就短路 |
+| \|\| | 左边为true就短路  |
+
+原因：通过左边能得到整个式子的结果，因此没必要再判断右边 l 运算结果：无论 && 还是 || ，运算结果都是最后被执行的表达式值，一般用在变量赋值
+
+## 12、转换为布尔型
+
+```javascript
+console.log(Boolean('pink'))   //true
+  console.log(Boolean(''))		//false
+  console.log(Boolean(0))	//false
+  console.log(Boolean(90))   //true
+  console.log(Boolean(-1))   //true
+  console.log(Boolean(undefined))	//false
+  console.log(Boolean(null))	//false
+  console.log(Boolean(NaN))	//false
+```
+
+
+
+![image-20260120110017723](./JavaScript自己整理的笔记.assets/image-20260120110017723.png)
+
+> 显示转换：
+>
+> ‘’ 、0、undefined、null、false、NaN 转换为布尔值后都是false, 其余则为 true
+>
+> 隐式转换：
+>
+> 1. 有字符串的加法 “” + 1 ，结果是 “1”
+> 2. 减法 - （像大多数数学运算一样）只能用于数字，它会使空字符串 “” 转换为 0
+> 3. null 经过数字转换之后会变为 0
+> 4. undefined 经过数字转换之后会变为 NaN
+
