@@ -19,4 +19,5 @@
 * [21.持续集成与部署CICD](doc/linux/21.持续集成与部署CICD.md)
 * [22.性能优化](doc/linux/22.性能优化.md)
 * [23.高可用架构设计](doc/linux/23.高可用架构设计.md)
+* [91.Linux常用命令汇总](doc/linux/91.Linux常用命令汇总.md)
 * [99.Linux学习手册](doc/linux/99.Linux学习手册.md)
