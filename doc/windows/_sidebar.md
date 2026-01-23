@@ -1,6 +1,7 @@
 * [01.Linux子系统的安装和基本操作](doc/windows/01.Linux子系统的安装和基本操作)
 * [02.Linux子系统管理工具WSL2-Distro-Manager](doc/windows/02.Linux子系统管理工具WSL2-Distro-Manager)
-* [03.SoftEtherVPN部署教程-最终版](doc/windows/03.SoftEtherVPN部署教程-最终版)
+* [03-1.SoftEtherVPN部署教程-最终版](doc/windows/03-1.SoftEtherVPN部署教程-最终版)
+* [03-2.SoftEther-Centos服务器搭建及客户端连接](doc/windows/03-2.SoftEther-Centos服务器搭建及客户端连接)
 * [04.读取登录失败的记录事件](doc/windows/04.读取登录失败的记录事件)
 * [05.命令行修改系统的环境变量PATH](doc/windows/05.命令行修改系统的环境变量PATH)
 * [06.windwos加路由](doc/windows/06.windwos加路由)
