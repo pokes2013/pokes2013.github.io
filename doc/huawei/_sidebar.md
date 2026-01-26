@@ -16,6 +16,7 @@
 * [16、IPv6基础](doc/huawei/16、IPv6基础)
 * [17、NAT核心知识点梳理](doc/huawei/17、NAT核心知识点梳理)
 * [18、VRRP协议的深度剖析](doc/huawei/18、VRRP协议的深度剖析)
+* [19-5、通过修改ospf的COST值来控制路由选路](doc/huawei/19-5、通过修改ospf的COST值来控制路由选路)
 * [19、ospf](doc/huawei/19、ospf)
 * [20、ppp协议](doc/huawei/20、ppp协议)
 * [21、PPPoE模拟拨号实验](doc/huawei/21、PPPoE模拟拨号实验)
@@ -33,3 +34,4 @@
 * [33、中恒普瑞与集团VPN对接项目](doc/huawei/33、中恒普瑞与集团VPN对接项目)
 * [50、MPLS动态LSP配置实验](doc/huawei/50、MPLS动态LSP配置实验)
 * [51.BGP基础笔记](doc/huawei/51.BGP基础笔记)
+* [ENSP和HCI共存方法](doc/huawei/ENSP和HCI共存方法)

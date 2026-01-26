@@ -6,6 +6,8 @@
 
 
 
+附件下载：[实验文件下载](doc/huawei/fujian/通过修改ospf的COST值来控制路由选路.zip)
+
 ![1711540517794](通过修改ospf的COST值来控制路由选路.assets/1711540517794.png)
 
 配置好OSPF之后，发现默认走的是上面 
