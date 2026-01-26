@@ -17,6 +17,7 @@
 * [17.NAT核心知识点梳理](doc/huawei/17.NAT核心知识点梳理)
 * [18.VRRP协议的深度剖析](doc/huawei/18.VRRP协议的深度剖析)
 * [19-01.ospf基础概念](doc/huawei/19-01.ospf基础概念)
+* [19-02.OSPF的基本配置实验](doc/huawei/19-02.OSPF的基本配置实验)
 * [19-05.通过修改ospf的COST值来控制路由选路](doc/huawei/19-05.通过修改ospf的COST值来控制路由选路)
 * [20.ppp协议](doc/huawei/20.ppp协议)
 * [21.PPPoE模拟拨号实验](doc/huawei/21.PPPoE模拟拨号实验)
