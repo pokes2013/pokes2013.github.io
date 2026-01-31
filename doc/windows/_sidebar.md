@@ -5,5 +5,8 @@
 * [04.读取登录失败的记录事件](doc/windows/04.读取登录失败的记录事件)
 * [05.命令行修改系统的环境变量PATH](doc/windows/05.命令行修改系统的环境变量PATH)
 * [06.windwos加路由](doc/windows/06.windwos加路由)
+* [07.Windows下测试TCP-UDP端口是否打开的方法](doc/windows/07.Windows下测试TCP-UDP端口是否打开的方法)
+* [08.wget的新用法](doc/windows/08.wget的新用法)
+* [09.Netcat网络工程师必备的瑞士军刀](doc/windows/09.Netcat网络工程师必备的瑞士军刀)
 * [安全运维工程师入门阶段每周学习计划表(共24周)](doc/windows/安全运维工程师入门阶段每周学习计划表(共24周))
 * [安全运维工程师都需要会什么](doc/windows/安全运维工程师都需要会什么)
