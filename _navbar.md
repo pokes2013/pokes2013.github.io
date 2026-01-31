@@ -18,6 +18,7 @@
   * [🥣华为HCIP网路](/doc/huawei/)
   * [🥣ERP系统运维](/doc/erp/)
   * [🥣现有关于工作](doc/work/)
+  * [🥣教女儿学英语](doc/yingyu/)
 * <i class="fas fa-tools"></i> 🛠️开发工具
   * [🚀Git操作](/doc/git/)
   * [🚀Nginx](/doc/nginx/)
