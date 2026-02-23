@@ -19,6 +19,7 @@
 * [19-01.ospf基础概念](doc/huawei/19-01.ospf基础概念)
 * [19-02.OSPF的基本配置实验](doc/huawei/19-02.OSPF的基本配置实验)
 * [19-05.通过修改ospf的COST值来控制路由选路](doc/huawei/19-05.通过修改ospf的COST值来控制路由选路)
+* [19-09.CSDN-OSPF全网最详解-理论及配置](doc/huawei/19-09.CSDN-OSPF全网最详解-理论及配置)
 * [20.ppp协议](doc/huawei/20.ppp协议)
 * [21-1.PPPoE模拟拨号实验](doc/huawei/21-1.PPPoE模拟拨号实验)
 * [21-2.PPPOE模拟内外网实验及NAT配置](doc/huawei/21-2.PPPOE模拟内外网实验及NAT配置)
