@@ -8,5 +8,6 @@
 * [07.Windows下测试TCP-UDP端口是否打开的方法](doc/windows/07.Windows下测试TCP-UDP端口是否打开的方法)
 * [08.wget的新用法](doc/windows/08.wget的新用法)
 * [09.Netcat网络工程师必备的瑞士军刀](doc/windows/09.Netcat网络工程师必备的瑞士军刀)
+* [10.Win10共享方案](doc/windows/10.Win10共享方案)
 * [安全运维工程师入门阶段每周学习计划表(共24周)](doc/windows/安全运维工程师入门阶段每周学习计划表(共24周))
 * [安全运维工程师都需要会什么](doc/windows/安全运维工程师都需要会什么)
