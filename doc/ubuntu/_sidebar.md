@@ -1,4 +1,6 @@
+* [ubuntu2024使用开启远程控制-使用xrdp](doc/ubuntu/ubuntu2024使用开启远程控制-使用xrdp)
 * [Ubuntu2024换国内源](doc/ubuntu/Ubuntu2024换国内源)
 * [ubuntuServer安装docker](doc/ubuntu/ubuntuServer安装docker)
+* [ubuntu使用开启远程xfce4](doc/ubuntu/ubuntu使用开启远程xfce4)
 * [Ubuntu使用笔记](doc/ubuntu/Ubuntu使用笔记)
 * [Ubuntu系统右键目录“本地网络共享”](doc/ubuntu/Ubuntu系统右键目录“本地网络共享”)
