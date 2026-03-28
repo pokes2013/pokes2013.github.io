@@ -1,0 +1,96 @@
+
+
+# ubuntu2024使用开启远程控制-使用xrdp
+
+## 1、禁用 Wayland（解决远程黑屏）
+
+```bash
+sudo sed -i 's/#WaylandEnable=false/WaylandEnable=false/' /etc/gdm3/custom.conf
+sudo systemctl restart gdm3
+```
+
+## 安装远程桌面 xrdp（Windows 直接连）
+
+```bash
+sudo apt install -y xrdp xorgxrdp
+sudo adduser xrdp ssl-cert
+sudo systemctl enable --now xrdp
+sudo reboot
+```
+
+## 重启后 Windows 远程连接
+
+1. 打开远程桌面 `mstsc`
+2. 输入 Ubuntu IP
+3. 输入你的用户名 + 密码
+
+## 解决闪退的问题
+
+> 问题：一闪而过
+>
+> 你现在的情况就是典型的：能连上、输完密码就一闪而过、直接断开
+>
+> 这是 Ubuntu 24.04 + xrdp 最常见的 bug，不是你操作错了，按下面 3 步 100% 解决。
+
+### 第一步：创建一个专门给远程用的启动脚本
+
+在 Ubuntu 终端里执行这一句：
+
+```bash
+echo "export GNOME_SHELL_SESSION_MODE=ubuntu
+export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+export XDG_SESSION_TYPE=x11
+gnome-session" > ~/.xsession
+```
+
+然后给权限：
+
+```bash
+chmod 644 ~/.xsession
+```
+
+### 第二步：把你的用户加入 ssl-cert 组（必做）
+
+```bash
+sudo adduser $USER ssl-cert
+sudo adduser xrdp ssl-cert
+```
+
+### 第三步：重启 xrdp 服务
+
+```bash
+sudo systemctl restart xrdp
+```
+
+### 再去 Windows 远程连接
+
+直接输 IP → 用户名密码 → 这次**不会闪退**了。
+
+> 注意：我的到这里就已经可以正常连接了
+>
+
+### 如果还闪，再加最后一步（针对 24.04 必开）
+
+```bash
+sudo systemctl set-default graphical.target
+sudo reboot
+```
+
+然后重启：
+
+再连一次，基本就稳了。
+
+还不行我再给你换更稳的 Xfce 桌面远程方案。
+
+## 更改默认端口
+
+```bash
+sudo vim /etc/xrdp/xrdp.ini
+
+更改这里的端口
+port=3389
+
+sudo reboot   # 必须重启
+```
+
+保存之后需要重启电脑
