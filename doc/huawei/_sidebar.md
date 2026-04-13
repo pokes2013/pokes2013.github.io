@@ -39,4 +39,5 @@
 * [33.中恒普瑞与集团VPN对接项目](doc/huawei/33.中恒普瑞与集团VPN对接项目)
 * [50.MPLS动态LSP配置实验](doc/huawei/50.MPLS动态LSP配置实验)
 * [51.BGP基础笔记](doc/huawei/51.BGP基础笔记)
+* [9998.企业内部华为核心交换机的常用限速方法](doc/huawei/9998.企业内部华为核心交换机的常用限速方法)
 * [9999..ENSP和HCI共存方法](doc/huawei/9999..ENSP和HCI共存方法)
