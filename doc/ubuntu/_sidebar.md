@@ -4,4 +4,5 @@
 * [04.ubuntu安装常用软件](doc/ubuntu/04.ubuntu安装常用软件)
 * [05.ubuntu使用开启远程xfce4](doc/ubuntu/05.ubuntu使用开启远程xfce4)
 * [06.Ubuntu系统右键目录“本地网络共享”](doc/ubuntu/06.Ubuntu系统右键目录“本地网络共享”)
+* [07.ubuntu2024安装Cinnamon桌面](doc/ubuntu/07.ubuntu2024安装Cinnamon桌面)
 * [99.Ubuntu使用笔记](doc/ubuntu/99.Ubuntu使用笔记)
