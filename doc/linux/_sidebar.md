@@ -6,6 +6,7 @@
 * [04.系统管理基础](doc/linux/04.系统管理基础.md)
 * [05.软件包管理](doc/linux/05.软件包管理.md)
 * [10.网络服务部署](doc/linux/10.网络服务部署.md)
+* [100.1AlmaLinux9安装Samba虚拟用户配置](doc/linux/100.1AlmaLinux9安装Samba虚拟用户配置.md)
 * [11.数据库运维](doc/linux/11.数据库运维.md)
 * [12.系统存储管理](doc/linux/12.系统存储管理.md)
 * [13.防火墙与安全](doc/linux/13.防火墙与安全.md)
