@@ -5,4 +5,5 @@
 * [05.ubuntu使用开启远程xfce4](doc/ubuntu/05.ubuntu使用开启远程xfce4)
 * [06.Ubuntu系统右键目录“本地网络共享”](doc/ubuntu/06.Ubuntu系统右键目录“本地网络共享”)
 * [07.ubuntu2024安装Cinnamon桌面](doc/ubuntu/07.ubuntu2024安装Cinnamon桌面)
+* [08.UbuntuXfce桌面安装微信和Chrome后无法启动优化方案](doc/ubuntu/08.UbuntuXfce桌面安装微信和Chrome后无法启动优化方案)
 * [99.Ubuntu使用笔记](doc/ubuntu/99.Ubuntu使用笔记)
