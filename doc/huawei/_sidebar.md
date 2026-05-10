@@ -37,6 +37,7 @@
 * [30-2.MPLS-VPN配置实验与思路](doc/huawei/30-2.MPLS-VPN配置实验与思路)
 * [30-3.MPLS环路检测机制](doc/huawei/30-3.MPLS环路检测机制)
 * [30-4.MPLS动态LSP配置实验](doc/huawei/30-4.MPLS动态LSP配置实验)
+* [30-5.MPLS静态LSP配置实验](doc/huawei/30-5.MPLS静态LSP配置实验)
 * [31.堆叠](doc/huawei/31.堆叠)
 * [32.华为防火墙](doc/huawei/32.华为防火墙)
 * [33.中恒普瑞与集团VPN对接项目](doc/huawei/33.中恒普瑞与集团VPN对接项目)
