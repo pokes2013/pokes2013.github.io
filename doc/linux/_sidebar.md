@@ -21,5 +21,6 @@
 * [023.高可用架构设计](doc/linux/023.高可用架构设计.md)
 * [091.Linux常用命令汇总](doc/linux/091.Linux常用命令汇总.md)
 * [092.Linux的进程常用查看方法](doc/linux/092.Linux的进程常用查看方法.md)
+* [099.AlmaLinux9安装Samba虚拟用户配置](doc/linux/099.AlmaLinux9安装Samba虚拟用户配置.md)
 * [099.Linux学习手册](doc/linux/099.Linux学习手册.md)
-* [100.1AlmaLinux9安装Samba虚拟用户配置](doc/linux/100.1AlmaLinux9安装Samba虚拟用户配置.md)
+* [099.LVS-DR模式部署详解-轮询调度](doc/linux/099.LVS-DR模式部署详解-轮询调度.md)
