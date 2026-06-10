@@ -15,6 +15,7 @@
   * [🥣Linux系统运维](/doc/linux/)
   * [🥣Ubuntu熟悉](/doc/ubuntu/)
   * [🥣Windows运维](/doc/windows/)
+  * [🥣Windows-CMD](/doc/windows/cmd/)
   * [🥣华为HCIP网路](/doc/huawei/)
   * [🥣ERP系统运维](/doc/erp/)
   * [🥣现有关于工作](doc/work/)
