@@ -3,3 +3,4 @@
 * [003.windows搭建hexo教程](doc/blog/003.windows搭建hexo教程)
 * [004.GitBook在Windows下安装部署](doc/blog/004.GitBook在Windows下安装部署)
 * [999.docsify部署及侧边栏和导航栏的配置](doc/blog/999.docsify部署及侧边栏和导航栏的配置)
+* [999.Typora中关于GIF动图优化方案](doc/blog/999.Typora中关于GIF动图优化方案)
