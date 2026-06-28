@@ -6,7 +6,7 @@
 * [06.Python面向对象](doc/python/06.Python面向对象)
 * [07.Python类的定义与调用-清晰整理版](doc/python/07.Python类的定义与调用-清晰整理版)
 * [08.类的属性及方法调用](doc/python/08.类的属性及方法调用)
-* [09..Python面向对象-封装&继承&多态](doc/python/09..Python面向对象-封装&继承&多态)
+* [09.Python面向对象-封装&继承&多态](doc/python/09.Python面向对象-封装&继承&多态)
 * [20.openpyxl库基础学习笔记](doc/python/20.openpyxl库基础学习笔记)
 * [21.pandas的数据结构和基本操作](doc/python/21.pandas的数据结构和基本操作)
 * [31.正则表达式re模块](doc/python/31.正则表达式re模块)
