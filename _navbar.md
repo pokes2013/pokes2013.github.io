@@ -6,11 +6,11 @@
   * [📝Python学习笔记](doc/python/)
   * [📝C语言学习笔记](doc/cccc/)
   * [📝GO语言学习笔记]()
-  * [📝Node.js笔记]()
 * <i class="fas fa-linux"></i> 📚前端学习
   * [⚡HTML基础学习](doc/html/)
   * [⚡CSS基础学习](doc/css/)
   * [⚡JavaScript基础学习](doc/JavaScript/)
+  * [⚡Node.js笔记]()
 * <i class="fas fa-linux"></i> 💾系统运维
   * [🥣Linux系统运维](/doc/linux/)
   * [🥣Ubuntu熟悉](/doc/ubuntu/)
