@@ -4,3 +4,4 @@
 * [91.半成品出入库教程](doc/erp/91.半成品出入库教程)
 * [92.FineReport教程](doc/erp/92.FineReport教程)
 * [93.ERP实施计划](doc/erp/93.ERP实施计划)
+* [94.单据的状态及对应的按钮](doc/erp/94.单据的状态及对应的按钮)
