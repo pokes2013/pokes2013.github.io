@@ -12,6 +12,8 @@
 * [21.pandas的数据结构和基本操作](doc/python/21.pandas的数据结构和基本操作)
 * [31.正则表达式re模块](doc/python/31.正则表达式re模块)
 * [91.Python基础三条件判断与循环语句](doc/python/91.Python基础三条件判断与循环语句)
+* [94.Django项目开发完成后-Windows服务器部署](doc/python/94.Django项目开发完成后-Windows服务器部署)
+* [95.djiango项目如何部署](doc/python/95.djiango项目如何部署)
 * [96.Flask框架全面详解](doc/python/96.Flask框架全面详解)
 * [97.PythonFlask+数据库实现增删改查-CRUD页面展示完整教程](doc/python/97.PythonFlask+数据库实现增删改查-CRUD页面展示完整教程)
 * [98.基于FFmpeg的Python专业视频转码类](doc/python/98.基于FFmpeg的Python专业视频转码类)
