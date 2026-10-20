@@ -72,7 +72,7 @@ body {
 /* 文章内容核心容器：.markdown-section */
 .markdown-section {
   max-width: 1640px;
-  padding: 40px 140px;
+  padding: 160px 140px 40px;
   margin: 0 auto;
   background-color: #ffffff !important;
 }
@@ -275,4 +275,11 @@ body {
     display: block; /* 移动端两个span换行显示，避免横向拥挤 */
     margin: 0.3rem 0; /* 纵向间距，替代横向间距 */
   }
+}
+
+
+/* =============== 右侧大纲（docsify-plugin-toc）位置微调 =============== */
+/* 插件默认 top: 70px，这里整体下移 20px 到 90px */
+aside.toc-nav {
+  top: 140px !important;
 }

@@ -19,20 +19,6 @@
 
 ---
 
-## 🚀 快速开始
-
-选择你感兴趣的方向，开启探索之旅 👇
-
-<div align="center" style="margin: 2rem 0;">
-  <a href="/frontend/" style="display: inline-block; margin: 0 16px; padding: 12px 24px; background: #42b983; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 2px 6px rgba(66, 185, 131, 0.3);">
-    📚 学习前端
-  </a>
-  <a href="/backend/" style="display: inline-block; margin: 0 16px; padding: 12px 24px; background: #35495e; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 2px 6px rgba(53, 73, 94, 0.3);">
-    ☕ 学习后端
-  </a>
-</div>
-
----
 
 ## 🔥 热门专题
 

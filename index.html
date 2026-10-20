@@ -10,24 +10,21 @@
   
   <!-- 主题样式（保留你的 docsify-themeable 主题，兼容代码高亮） -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  
-  
+  <!-- ========= 新增：右侧TOC插件样式 ========= -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/light.css">
+
   <!-- 你的自定义 CSS（保留原有配置） -->
   <link rel="stylesheet" href="./css/qianwen.css">
-
   <!-- 在 Docsify 核心 JS 前添加这些 -->
   <!-- Prism.js 核心 -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-
   <!-- 可选：如果你需要代码行号功能 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.css">
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-
 </head>
 <body>
   <div id="app"></div>
-
   <script>
       window.$docsify = {
         plugins: [
@@ -39,35 +36,36 @@
               '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
               '</footer>'
             ].join('');
-
             hook.afterEach(function(html) {
               return html + footer;
             });
           }
         ],
-
         name: '<span>👨‍🍳外卖品尝师</span>',
         repo: '',
-        loadSidebar: true,        // 开启自动加载侧边栏
-        subMaxLevel: 3,           // 侧边栏显示层级
-        autoHeader: true,         // 自动生成标题
+        loadSidebar: true,        // 开启手动侧边栏（_sidebar.md）
+        // subMaxLevel: 3,        // ✅【注释/删掉，关键！禁止自动抓取标题进左侧】
+        autoHeader: true,
         loadNavbar: true,         // 加载导航栏（_navbar.md）
-        coverpage: false,         // 关闭封面
-        maxLevel: 5,              // 内容标题最大渲染层级
-
+        coverpage: false,
+        maxLevel: 5,
         pdfEmbed: {
-          width: '80%'  // 支持 百分比/像素值，比如 80% 或 1200px 或 900px
+          width: '80%'
         },
-
-
-        mergeNavbar: true         // 小屏合并导航栏到侧边栏
-        // logo: '/_media/icon.svg' // 如需启用logo，取消注释并放入对应图标文件
-
+        mergeNavbar: true,
+        // ========= 配置 docsify-plugin-toc 右侧大纲 =========
+        toc: {
+          tocMaxLevel: 4,        // 提取标题层级，h2~h4
+          target: 'h2,h3,h4',    // 要抓取哪些标题
+          ignoreHeaders: []
+        }
       }
   </script>
-
   <!-- 最后加载 Docsify -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- ========= 新增：右侧TOC插件JS，放在docsify后面 ========= -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
+
   <!-- emoji表情支持 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <!-- 图片缩放支持 -->
@@ -81,7 +79,6 @@
   
   <!-- 侧边栏折叠插件 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse@1/dist/docsify-sidebar-collapse.min.js"></script>
-
     <!-- 代码高亮支持 - 各种编程语言 -->
   <script src="https://notebook.js.org/plugin/prism-c.js"></script>
   <script src="https://notebook.js.org/plugin/prism-cpp.js"></script>
@@ -103,23 +100,16 @@
   <script src="https://notebook.js.org/plugin/js/prism-yaml.js"></script>
   <script src="https://notebook.js.org/plugin/js/prism-go.js"></script>
   <script src="https://notebook.js.org/plugin/js/prism-matlab.js"></script>
-
   <!-- 插件：鼠标点击特效（爱心） -->
   <!-- <script src="https://notebook.js.org/plugin/click_heart.js"></script> -->
-
   <!-- 插件：复制提示框 -->
   <script src="https://notebook.js.org/plugin/sweetalert.min.js"></script>
-
   <!-- 插件：DOT 语言支持（图形绘制） -->
   <script src="https://notebook.js.org/plugin/viz.js"></script>
   
   <!-- 插件：LaTeX 数学公式支持 -->
   <script src="https://notebook.js.org/plugin/js/docsify-katex.js"></script>
-
   <!-- 预览您的 xmind 文件 -->
   <script src="//cdn.jsdelivr.net/gh/AntHubTC/docsify-xmind@1.0/example/dist/index.min.js"></script>
-
-
-
 </body>
 </html>
